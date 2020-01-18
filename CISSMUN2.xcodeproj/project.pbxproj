@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8923CE078F000B687F /* AppDelegate.swift */; };
 		CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */; };
-		CB4ACD8E23CE078F000B687F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8D23CE078F000B687F /* ContentView.swift */; };
+		CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8D23CE078F000B687F /* TabController.swift */; };
 		CB4ACD9023CE0790000B687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD8F23CE0790000B687F /* Assets.xcassets */; };
 		CB4ACD9323CE0790000B687F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD9223CE0790000B687F /* Preview Assets.xcassets */; };
 		CB4ACD9623CE0790000B687F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD9423CE0790000B687F /* LaunchScreen.storyboard */; };
 		CB4ACDA123CE0791000B687F /* CISSMUN2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACDA023CE0791000B687F /* CISSMUN2Tests.swift */; };
 		CB4ACDAC23CE0791000B687F /* CISSMUN2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACDAB23CE0791000B687F /* CISSMUN2UITests.swift */; };
+		CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183AE23D2BFAA000B687F /* ProcedureView.swift */; };
+		CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B023D2BFB3000B687F /* ScheduleView.swift */; };
+		CBA183B323D2BFC0000B687F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B223D2BFC0000B687F /* MapView.swift */; };
+		CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B423D2BFCB000B687F /* MoreView.swift */; };
+		CBA183B723D2C13F000B687F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B623D2C13F000B687F /* HomeView.swift */; };
+		CBA183C223D36AF9000B687F /* PDFVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183C123D36AF9000B687F /* PDFVIewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		CB4ACD8623CE078E000B687F /* CISSMUN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CISSMUN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4ACD8923CE078F000B687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB4ACD8D23CE078F000B687F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB4ACD8D23CE078F000B687F /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		CB4ACD8F23CE0790000B687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4ACD9223CE0790000B687F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB4ACD9523CE0790000B687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		CB4ACDA723CE0791000B687F /* CISSMUN2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CISSMUN2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4ACDAB23CE0791000B687F /* CISSMUN2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CISSMUN2UITests.swift; sourceTree = "<group>"; };
 		CB4ACDAD23CE0791000B687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA183AE23D2BFAA000B687F /* ProcedureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureView.swift; sourceTree = "<group>"; };
+		CBA183B023D2BFB3000B687F /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		CBA183B223D2BFC0000B687F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CBA183B423D2BFCB000B687F /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		CBA183B623D2C13F000B687F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CBA183C123D36AF9000B687F /* PDFVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFVIewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,16 @@
 		CB4ACD8823CE078E000B687F /* CISSMUN2 */ = {
 			isa = PBXGroup;
 			children = (
+				CBA183BA23D2C64B000B687F /* Image Views */,
 				CB4ACD8923CE078F000B687F /* AppDelegate.swift */,
+				CBA183C123D36AF9000B687F /* PDFVIewController.swift */,
 				CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */,
-				CB4ACD8D23CE078F000B687F /* ContentView.swift */,
+				CB4ACD8D23CE078F000B687F /* TabController.swift */,
+				CBA183B623D2C13F000B687F /* HomeView.swift */,
+				CBA183AE23D2BFAA000B687F /* ProcedureView.swift */,
+				CBA183B023D2BFB3000B687F /* ScheduleView.swift */,
+				CBA183B223D2BFC0000B687F /* MapView.swift */,
+				CBA183B423D2BFCB000B687F /* MoreView.swift */,
 				CB4ACD8F23CE0790000B687F /* Assets.xcassets */,
 				CB4ACD9423CE0790000B687F /* LaunchScreen.storyboard */,
 				CB4ACD9723CE0790000B687F /* Info.plist */,
@@ -134,6 +153,13 @@
 				CB4ACDAD23CE0791000B687F /* Info.plist */,
 			);
 			path = CISSMUN2UITests;
+			sourceTree = "<group>";
+		};
+		CBA183BA23D2C64B000B687F /* Image Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Image Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
+				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
+				CBA183B323D2BFC0000B687F /* MapView.swift in Sources */,
 				CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */,
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
-				CB4ACD8E23CE078F000B687F /* ContentView.swift in Sources */,
+				CBA183B723D2C13F000B687F /* HomeView.swift in Sources */,
+				CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */,
+				CBA183C223D36AF9000B687F /* PDFVIewController.swift in Sources */,
+				CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
