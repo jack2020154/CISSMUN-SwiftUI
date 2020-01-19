@@ -20,7 +20,7 @@
 		CBA183B323D2BFC0000B687F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B223D2BFC0000B687F /* MapView.swift */; };
 		CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B423D2BFCB000B687F /* MoreView.swift */; };
 		CBA183B723D2C13F000B687F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B623D2C13F000B687F /* HomeView.swift */; };
-		CBA183C223D36AF9000B687F /* PDFVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183C123D36AF9000B687F /* PDFVIewController.swift */; };
+		CBA183C823D41880000B687F /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183C723D41880000B687F /* PDFViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		CBA183B223D2BFC0000B687F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CBA183B423D2BFCB000B687F /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		CBA183B623D2C13F000B687F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		CBA183C123D36AF9000B687F /* PDFVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFVIewController.swift; sourceTree = "<group>"; };
+		CBA183C723D41880000B687F /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			children = (
 				CBA183BA23D2C64B000B687F /* Image Views */,
 				CB4ACD8923CE078F000B687F /* AppDelegate.swift */,
-				CBA183C123D36AF9000B687F /* PDFVIewController.swift */,
+				CBA183C723D41880000B687F /* PDFViewController.swift */,
 				CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */,
 				CB4ACD8D23CE078F000B687F /* TabController.swift */,
 				CBA183B623D2C13F000B687F /* HomeView.swift */,
@@ -293,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA183C823D41880000B687F /* PDFViewController.swift in Sources */,
 				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
 				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
 				CBA183B323D2BFC0000B687F /* MapView.swift in Sources */,
@@ -300,7 +301,6 @@
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
 				CBA183B723D2C13F000B687F /* HomeView.swift in Sources */,
 				CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */,
-				CBA183C223D36AF9000B687F /* PDFVIewController.swift in Sources */,
 				CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
