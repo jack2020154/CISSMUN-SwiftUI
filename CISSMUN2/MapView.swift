@@ -10,7 +10,12 @@ import SwiftUI
 
 struct MapView: View {
     var body: some View {
-        Text("Template Map View")
+        ZStack {
+            Color("backgroundColor")
+            VStack {
+                Text("Template Map View")
+            }
+        }
     }
 }
 

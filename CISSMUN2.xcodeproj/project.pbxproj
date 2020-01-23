@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB28133023D5352F000B687F /* PDFRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28132F23D5352F000B687F /* PDFRowView.swift */; };
 		CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8923CE078F000B687F /* AppDelegate.swift */; };
 		CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */; };
 		CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8D23CE078F000B687F /* TabController.swift */; };
@@ -21,6 +22,8 @@
 		CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B423D2BFCB000B687F /* MoreView.swift */; };
 		CBA183B723D2C13F000B687F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B623D2C13F000B687F /* HomeView.swift */; };
 		CBA183C823D41880000B687F /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183C723D41880000B687F /* PDFViewController.swift */; };
+		CBA183CB23D4505C000B687F /* ImageRescaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183CA23D4505C000B687F /* ImageRescaler.swift */; };
+		CBD0205F23D9B60E000B687F /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0205E23D9B60E000B687F /* LiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB28132F23D5352F000B687F /* PDFRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRowView.swift; sourceTree = "<group>"; };
 		CB4ACD8623CE078E000B687F /* CISSMUN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CISSMUN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4ACD8923CE078F000B687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		CBA183B423D2BFCB000B687F /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		CBA183B623D2C13F000B687F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBA183C723D41880000B687F /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		CBA183CA23D4505C000B687F /* ImageRescaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRescaler.swift; sourceTree = "<group>"; };
+		CBD0205E23D9B60E000B687F /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +117,9 @@
 		CB4ACD8823CE078E000B687F /* CISSMUN2 */ = {
 			isa = PBXGroup;
 			children = (
-				CBA183BA23D2C64B000B687F /* Image Views */,
+				CBA183BA23D2C64B000B687F /* Supporting Files */,
 				CB4ACD8923CE078F000B687F /* AppDelegate.swift */,
-				CBA183C723D41880000B687F /* PDFViewController.swift */,
 				CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */,
-				CB4ACD8D23CE078F000B687F /* TabController.swift */,
 				CBA183B623D2C13F000B687F /* HomeView.swift */,
 				CBA183AE23D2BFAA000B687F /* ProcedureView.swift */,
 				CBA183B023D2BFB3000B687F /* ScheduleView.swift */,
@@ -155,11 +159,16 @@
 			path = CISSMUN2UITests;
 			sourceTree = "<group>";
 		};
-		CBA183BA23D2C64B000B687F /* Image Views */ = {
+		CBA183BA23D2C64B000B687F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CBA183CA23D4505C000B687F /* ImageRescaler.swift */,
+				CBD0205E23D9B60E000B687F /* LiveViewController.swift */,
+				CBA183C723D41880000B687F /* PDFViewController.swift */,
+				CB28132F23D5352F000B687F /* PDFRowView.swift */,
+				CB4ACD8D23CE078F000B687F /* TabController.swift */,
 			);
-			path = "Image Views";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,14 +302,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB28133023D5352F000B687F /* PDFRowView.swift in Sources */,
 				CBA183C823D41880000B687F /* PDFViewController.swift in Sources */,
 				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
 				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
 				CBA183B323D2BFC0000B687F /* MapView.swift in Sources */,
 				CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */,
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
+				CBA183CB23D4505C000B687F /* ImageRescaler.swift in Sources */,
 				CBA183B723D2C13F000B687F /* HomeView.swift in Sources */,
 				CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */,
+				CBD0205F23D9B60E000B687F /* LiveViewController.swift in Sources */,
 				CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cissdev.CISSMUN2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cissdev.CISSMUN2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

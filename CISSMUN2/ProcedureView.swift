@@ -14,7 +14,6 @@ struct Files: Identifiable {
     var filename: String
 }
 
-
 struct ProcedureView: View {
 
     let filelist: [Files] = [
@@ -27,13 +26,28 @@ struct ProcedureView: View {
     ]
     
     var body: some View {
-        NavigationView {
-            List(filelist, id:\.id) { file in
-                NavigationLink(destination: PDFViewController(dname: file.displayname, fname: file.filename)) {
-                    Text(file.displayname)
-                }
-            }.navigationBarTitle(Text("Documents"))
+        ZStack {
+            Color("backgroundColor").edgesIgnoringSafeArea(.all)
+        VStack {
+            ImageRescaler(image: Image("procedure"), text: "Procedure")
+            NavigationView {
+//                List(filelist, id:\.id) { file in
+//                    NavigationLink(destination: PDFViewController(dname: file.displayname, fname: file.filename)) {
+//                        PDFRowView(displayname: file.displayname)
+//                    }
+//                }.navigationBarTitle("Documents")
+                    ScrollView(.horizontal, content: {
+                        HStack(spacing: 10) {
+                            ForEach(filelist) { file in
+                                NavigationLink(destination: PDFViewController(dname: file.displayname, fname: file.filename)) {
+                                    PDFRowView(displayname: file.displayname)
+                                }
+                            }
+                        }.padding(.leading, 10)
+                    }).navigationBarTitle("Documents")
+            }.offset(y: -100)
         }
+    }
     }
 }
 

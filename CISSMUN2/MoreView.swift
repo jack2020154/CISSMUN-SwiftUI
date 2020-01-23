@@ -10,7 +10,12 @@ import SwiftUI
 
 struct MoreView: View {
     var body: some View {
-        Text("Template More View")
+        ZStack {
+            Color("backgroundColor")
+            VStack {
+                Text("Template More View")
+            }
+        }
     }
 }
 
