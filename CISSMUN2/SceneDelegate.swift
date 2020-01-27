@@ -6,6 +6,9 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
+//  Handles a bunch of fancy stuff like what happens when the app's closed, what's happening in the background etc.
+//  All we really care about is the first scene function, which defines the TabController file as the root view controller.
+
 import UIKit
 import SwiftUI
 

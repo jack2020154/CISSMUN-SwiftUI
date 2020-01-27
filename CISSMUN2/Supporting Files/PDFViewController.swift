@@ -6,16 +6,22 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
+//  Displays the PDF documents
+//  Called from ProcedureView
+
 import SwiftUI
 
 struct PDFViewController: View {
     var dname: String
     var fname: String
     var body: some View {
-        VStack {
-            Text("PDFViewController Template")
-            Text("Display Name: " + dname)
-            Text("File Name: " + fname)
+        ZStack {
+            Color("backgroundColor")
+            VStack {
+                Text("PDFViewController Template")
+                Text("Display Name: " + dname)
+                Text("File Name: " + fname)
+            }.navigationBarTitle(Text(dname), displayMode: .inline)
         }
     }
 }

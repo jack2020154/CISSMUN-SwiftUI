@@ -6,6 +6,8 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
+//  Defines the Tab Menu at the bottom of the sreen, with the selection attribute setting the default view of home.
+
 import SwiftUI
 
 struct TabController: View{

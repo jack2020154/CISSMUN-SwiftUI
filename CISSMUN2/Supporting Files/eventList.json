@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "date": "Friday, January 17 2020",
+        "items":{
+            {
+                "id": 1,
+                "name": "Student Officer Workshop",
+                "location": "Wittenberg Hall (H316, H317, H318)",
+                "time": "8:30 AM - 11:00 AM"
+            },
+            {
+                "id": 2,
+                "name": "International Criminal Court in Session",
+                "location": "H306, H223, H329",
+                "time": "8:30 AM - 11:00 AM"
+            },
+            {
+                "id": 3,
+                "name": "CISSMUN Vigil In Session",
+                "location": "H305, H306",
+                "time": "8:30 AM - 11:00 AM"
+            },
+            {
+                "id": 4,
+                "name": "Registration",
+                "location": "PC Gym (P106)",
+                "time": "10:00 AM - 11:00 AM"
+            },
+            {
+                "id": 5,
+                "name": "Opening Ceremony",
+                "location": "PC Gym (P106)",
+                "time": "11:15 AM - 11:45 AM"
+            }
+            {
+                "id": 6,
+                "name": "Directors' Meeting",
+                "location": "PC Gym (P106)",
+                "time": "11:45 AM - 12:15 PM"
+            },
+            {
+                "id": 7,
+                "name": "Lunch Available",
+                "location": "PC Commons",
+                "time": "11:45 AM - 12:55 PM"
+            },
+            {
+                "id": 8,
+                "name": "Announcements/Opening Speeches",
+                "location": "All Committees in Session",
+                "time": "11:45 AM - 2:00 PM"
+            },
+            {
+                "id": 9,
+                "name": "Lobbying and Merging",
+                "location": "All Committees in Session",
+                "time": "2:00 PM - 6:00 PM"
+            },
+            {
+                "id": 10,
+                "name": "Approval Panel Open",
+                "location": "All Committees in Session",
+                "time": "2:00 PM - 6:00 PM"
+            },
+            {
+                "id": 11,
+                "name": "Dinner",
+                "location": "Phoenix Library",
+                "time": "2:00 PM - 6:00 PM"
+            },
+            {
+                "id": 12,
+                "name": "Adjournment",
+                "location": "",
+                "time": "7:15 PM"
+            }
+        }
+    },
+    {
+    "id": 2
+    "date": "Saturday, January 18 2020"
+    "items" : {
+        {
+            "id": 1,
+            "name": "Roll Call",
+            "location": "All Committees in Session",
+            "time": "8:30 AM"
+        },
+        {
+            "id": 2,
+            "name": "Approval Panel Open",
+            "location": "All Committees in Session",
+            "time": "8:30 AM"
+        },
+        {
+            "id": 3,
+            "name": "Keynote Speaker - Mariatu Kamara",
+            "location": "PC Gym",
+            "time": "8:50 AM - 10:00 AM"
+        },
+        {
+            "id": 4,
+            "name": "Shanghai Tours Available for Directors",
+            "location": "PC Commons",
+            "time": "9:00 AM - 1:00 PM"
+        },
+        {
+            "id": 5,
+            "name": "Morning Break",
+            "location": "PC Commons",
+            "time": "10:00 AM - 10:30 AM"
+        },
+        {
+            "id": 6,
+            "name": "Approval Panel Open",
+            "location": "PC Commons",
+            "time": "10:00 AM - 10:30 AM"
+        },
+        {
+            "id": 7,
+            "name": "Formal Debate",
+            "location": "All Committees in Session",
+            "time": "10:30 AM - 4:30 PM"
+        },
+        {
+            "id": 8,
+            "name": "Lunch Available",
+            "location": "PC Commons",
+            "time": "11:45 AM - 1:30 PM"
+        },
+        {
+            "id": 9,
+            "name": "Adjournment",
+            "location": "",
+            "time": "4:30 PM"
+        }
+    }
+    },
+    {
+    "id": 3
+    "date": "Sunday, January 21 2020"
+    "items": {
+        {
+            "id": 1,
+            "name": "Roll Call",
+            "location": "All Committees in Session",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 2,
+            "name": "Formal Debate",
+            "location": "All Committees in Session",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 3,
+            "name": "Shanghai Tours Available for Directors",
+            "location": "PC Commons",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 4,
+            "name": "Morning Break",
+            "location": "PC Commons",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 5,
+            "name": "Formal Debate",
+            "location": "All Committees in Session",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 6,
+            "name": "Lunch Available",
+            "location": "PC Commons",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 7,
+            "name": "Directors’ Meeting",
+            "location": "TBD",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 8,
+            "name": "Closing Ceremony",
+            "location": "PC Gym (P106)",
+            "time": "4:30 PM"
+        },
+        {
+            "id": 9,
+            "name": "Adjournment",
+            "location": "",
+            "time": "4:30 PM"
+        }
+    }
+    }
+]

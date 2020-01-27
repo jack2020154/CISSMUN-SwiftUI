@@ -6,6 +6,9 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
+//  Manages the live view
+//  Called from ProcedureView
+
 import SwiftUI
 
 struct LiveViewController: View {

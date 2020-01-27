@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB28133023D5352F000B687F /* PDFRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28132F23D5352F000B687F /* PDFRowView.swift */; };
 		CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8923CE078F000B687F /* AppDelegate.swift */; };
 		CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */; };
 		CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8D23CE078F000B687F /* TabController.swift */; };
 		CB4ACD9023CE0790000B687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD8F23CE0790000B687F /* Assets.xcassets */; };
 		CB4ACD9323CE0790000B687F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD9223CE0790000B687F /* Preview Assets.xcassets */; };
 		CB4ACD9623CE0790000B687F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4ACD9423CE0790000B687F /* LaunchScreen.storyboard */; };
-		CB4ACDA123CE0791000B687F /* CISSMUN2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACDA023CE0791000B687F /* CISSMUN2Tests.swift */; };
-		CB4ACDAC23CE0791000B687F /* CISSMUN2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACDAB23CE0791000B687F /* CISSMUN2UITests.swift */; };
 		CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183AE23D2BFAA000B687F /* ProcedureView.swift */; };
 		CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B023D2BFB3000B687F /* ScheduleView.swift */; };
 		CBA183B323D2BFC0000B687F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B223D2BFC0000B687F /* MapView.swift */; };
@@ -23,28 +20,15 @@
 		CBA183B723D2C13F000B687F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B623D2C13F000B687F /* HomeView.swift */; };
 		CBA183C823D41880000B687F /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183C723D41880000B687F /* PDFViewController.swift */; };
 		CBA183CB23D4505C000B687F /* ImageRescaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183CA23D4505C000B687F /* ImageRescaler.swift */; };
+		CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEB623DEBEDA000B687F /* LegalView.swift */; };
+		CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */; };
+		CBC4EEBD23DEBFD9000B687F /* JinqiaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBC23DEBFD9000B687F /* JinqiaoView.swift */; };
+		CBC4EEBF23DEBFE3000B687F /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBE23DEBFE3000B687F /* ContactView.swift */; };
 		CBD0205F23D9B60E000B687F /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0205E23D9B60E000B687F /* LiveViewController.swift */; };
+		CBE7129223DAE815000B687F /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7129123DAE815000B687F /* EventList.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CB4ACD9D23CE0791000B687F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB4ACD7E23CE078E000B687F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB4ACD8523CE078E000B687F;
-			remoteInfo = CISSMUN2;
-		};
-		CB4ACDA823CE0791000B687F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB4ACD7E23CE078E000B687F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB4ACD8523CE078E000B687F;
-			remoteInfo = CISSMUN2;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		CB28132F23D5352F000B687F /* PDFRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRowView.swift; sourceTree = "<group>"; };
 		CB4ACD8623CE078E000B687F /* CISSMUN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CISSMUN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4ACD8923CE078F000B687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,12 +37,6 @@
 		CB4ACD9223CE0790000B687F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB4ACD9523CE0790000B687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4ACD9723CE0790000B687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB4ACD9C23CE0791000B687F /* CISSMUN2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CISSMUN2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4ACDA023CE0791000B687F /* CISSMUN2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CISSMUN2Tests.swift; sourceTree = "<group>"; };
-		CB4ACDA223CE0791000B687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB4ACDA723CE0791000B687F /* CISSMUN2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CISSMUN2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4ACDAB23CE0791000B687F /* CISSMUN2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CISSMUN2UITests.swift; sourceTree = "<group>"; };
-		CB4ACDAD23CE0791000B687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA183AE23D2BFAA000B687F /* ProcedureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureView.swift; sourceTree = "<group>"; };
 		CBA183B023D2BFB3000B687F /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		CBA183B223D2BFC0000B687F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -66,25 +44,16 @@
 		CBA183B623D2C13F000B687F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBA183C723D41880000B687F /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		CBA183CA23D4505C000B687F /* ImageRescaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRescaler.swift; sourceTree = "<group>"; };
+		CBC4EEB623DEBEDA000B687F /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiView.swift; sourceTree = "<group>"; };
+		CBC4EEBC23DEBFD9000B687F /* JinqiaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoView.swift; sourceTree = "<group>"; };
+		CBC4EEBE23DEBFE3000B687F /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		CBD0205E23D9B60E000B687F /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		CBE7129123DAE815000B687F /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB4ACD8323CE078E000B687F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB4ACD9923CE0791000B687F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB4ACDA423CE0791000B687F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,8 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				CB4ACD8823CE078E000B687F /* CISSMUN2 */,
-				CB4ACD9F23CE0791000B687F /* CISSMUN2Tests */,
-				CB4ACDAA23CE0791000B687F /* CISSMUN2UITests */,
 				CB4ACD8723CE078E000B687F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				CB4ACD8623CE078E000B687F /* CISSMUN2.app */,
-				CB4ACD9C23CE0791000B687F /* CISSMUN2Tests.xctest */,
-				CB4ACDA723CE0791000B687F /* CISSMUN2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,14 +82,12 @@
 		CB4ACD8823CE078E000B687F /* CISSMUN2 */ = {
 			isa = PBXGroup;
 			children = (
+				CBC4EEB923DEBF76000B687F /* Map VIews */,
+				CBC4EEB823DEBF65000B687F /* More Views */,
+				CBD0206023D9D74C000B687F /* Primary Views */,
 				CBA183BA23D2C64B000B687F /* Supporting Files */,
 				CB4ACD8923CE078F000B687F /* AppDelegate.swift */,
 				CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */,
-				CBA183B623D2C13F000B687F /* HomeView.swift */,
-				CBA183AE23D2BFAA000B687F /* ProcedureView.swift */,
-				CBA183B023D2BFB3000B687F /* ScheduleView.swift */,
-				CBA183B223D2BFC0000B687F /* MapView.swift */,
-				CBA183B423D2BFCB000B687F /* MoreView.swift */,
 				CB4ACD8F23CE0790000B687F /* Assets.xcassets */,
 				CB4ACD9423CE0790000B687F /* LaunchScreen.storyboard */,
 				CB4ACD9723CE0790000B687F /* Info.plist */,
@@ -141,34 +104,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CB4ACD9F23CE0791000B687F /* CISSMUN2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CB4ACDA023CE0791000B687F /* CISSMUN2Tests.swift */,
-				CB4ACDA223CE0791000B687F /* Info.plist */,
-			);
-			path = CISSMUN2Tests;
-			sourceTree = "<group>";
-		};
-		CB4ACDAA23CE0791000B687F /* CISSMUN2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				CB4ACDAB23CE0791000B687F /* CISSMUN2UITests.swift */,
-				CB4ACDAD23CE0791000B687F /* Info.plist */,
-			);
-			path = CISSMUN2UITests;
-			sourceTree = "<group>";
-		};
 		CBA183BA23D2C64B000B687F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				CBA183CA23D4505C000B687F /* ImageRescaler.swift */,
 				CBD0205E23D9B60E000B687F /* LiveViewController.swift */,
+				CBE7129123DAE815000B687F /* EventList.swift */,
 				CBA183C723D41880000B687F /* PDFViewController.swift */,
-				CB28132F23D5352F000B687F /* PDFRowView.swift */,
 				CB4ACD8D23CE078F000B687F /* TabController.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC4EEB823DEBF65000B687F /* More Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBC4EEB623DEBEDA000B687F /* LegalView.swift */,
+				CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */,
+				CBC4EEBC23DEBFD9000B687F /* JinqiaoView.swift */,
+				CBC4EEBE23DEBFE3000B687F /* ContactView.swift */,
+			);
+			path = "More Views";
+			sourceTree = "<group>";
+		};
+		CBC4EEB923DEBF76000B687F /* Map VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Map VIews";
+			sourceTree = "<group>";
+		};
+		CBD0206023D9D74C000B687F /* Primary Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBA183AE23D2BFAA000B687F /* ProcedureView.swift */,
+				CBA183B023D2BFB3000B687F /* ScheduleView.swift */,
+				CBA183B623D2C13F000B687F /* HomeView.swift */,
+				CBA183B223D2BFC0000B687F /* MapView.swift */,
+				CBA183B423D2BFCB000B687F /* MoreView.swift */,
+			);
+			path = "Primary Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,42 +166,6 @@
 			productReference = CB4ACD8623CE078E000B687F /* CISSMUN2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB4ACD9B23CE0791000B687F /* CISSMUN2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB4ACDB323CE0791000B687F /* Build configuration list for PBXNativeTarget "CISSMUN2Tests" */;
-			buildPhases = (
-				CB4ACD9823CE0791000B687F /* Sources */,
-				CB4ACD9923CE0791000B687F /* Frameworks */,
-				CB4ACD9A23CE0791000B687F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB4ACD9E23CE0791000B687F /* PBXTargetDependency */,
-			);
-			name = CISSMUN2Tests;
-			productName = CISSMUN2Tests;
-			productReference = CB4ACD9C23CE0791000B687F /* CISSMUN2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CB4ACDA623CE0791000B687F /* CISSMUN2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB4ACDB623CE0791000B687F /* Build configuration list for PBXNativeTarget "CISSMUN2UITests" */;
-			buildPhases = (
-				CB4ACDA323CE0791000B687F /* Sources */,
-				CB4ACDA423CE0791000B687F /* Frameworks */,
-				CB4ACDA523CE0791000B687F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB4ACDA923CE0791000B687F /* PBXTargetDependency */,
-			);
-			name = CISSMUN2UITests;
-			productName = CISSMUN2UITests;
-			productReference = CB4ACDA723CE0791000B687F /* CISSMUN2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,14 +178,6 @@
 				TargetAttributes = {
 					CB4ACD8523CE078E000B687F = {
 						CreatedOnToolsVersion = 11.3;
-					};
-					CB4ACD9B23CE0791000B687F = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = CB4ACD8523CE078E000B687F;
-					};
-					CB4ACDA623CE0791000B687F = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = CB4ACD8523CE078E000B687F;
 					};
 				};
 			};
@@ -264,8 +195,6 @@
 			projectRoot = "";
 			targets = (
 				CB4ACD8523CE078E000B687F /* CISSMUN2 */,
-				CB4ACD9B23CE0791000B687F /* CISSMUN2Tests */,
-				CB4ACDA623CE0791000B687F /* CISSMUN2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,20 +210,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB4ACD9A23CE0791000B687F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB4ACDA523CE0791000B687F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -302,51 +217,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB28133023D5352F000B687F /* PDFRowView.swift in Sources */,
 				CBA183C823D41880000B687F /* PDFViewController.swift in Sources */,
+				CBC4EEBD23DEBFD9000B687F /* JinqiaoView.swift in Sources */,
 				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
 				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
 				CBA183B323D2BFC0000B687F /* MapView.swift in Sources */,
 				CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */,
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
+				CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */,
 				CBA183CB23D4505C000B687F /* ImageRescaler.swift in Sources */,
+				CBC4EEBF23DEBFE3000B687F /* ContactView.swift in Sources */,
+				CBE7129223DAE815000B687F /* EventList.swift in Sources */,
 				CBA183B723D2C13F000B687F /* HomeView.swift in Sources */,
+				CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */,
 				CBA183AF23D2BFAA000B687F /* ProcedureView.swift in Sources */,
 				CBD0205F23D9B60E000B687F /* LiveViewController.swift in Sources */,
 				CB4ACD8E23CE078F000B687F /* TabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB4ACD9823CE0791000B687F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB4ACDA123CE0791000B687F /* CISSMUN2Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB4ACDA323CE0791000B687F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB4ACDAC23CE0791000B687F /* CISSMUN2UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB4ACD9E23CE0791000B687F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB4ACD8523CE078E000B687F /* CISSMUN2 */;
-			targetProxy = CB4ACD9D23CE0791000B687F /* PBXContainerItemProxy */;
-		};
-		CB4ACDA923CE0791000B687F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB4ACD8523CE078E000B687F /* CISSMUN2 */;
-			targetProxy = CB4ACDA823CE0791000B687F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB4ACD9423CE0790000B687F /* LaunchScreen.storyboard */ = {
@@ -514,90 +404,6 @@
 			};
 			name = Release;
 		};
-		CB4ACDB423CE0791000B687F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NB52NRZ5D5;
-				INFOPLIST_FILE = CISSMUN2Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CISSMUN2.app/CISSMUN2";
-			};
-			name = Debug;
-		};
-		CB4ACDB523CE0791000B687F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NB52NRZ5D5;
-				INFOPLIST_FILE = CISSMUN2Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CISSMUN2.app/CISSMUN2";
-			};
-			name = Release;
-		};
-		CB4ACDB723CE0791000B687F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NB52NRZ5D5;
-				INFOPLIST_FILE = CISSMUN2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CISSMUN2;
-			};
-			name = Debug;
-		};
-		CB4ACDB823CE0791000B687F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NB52NRZ5D5;
-				INFOPLIST_FILE = CISSMUN2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cissdev.CISSMUN2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CISSMUN2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,24 +421,6 @@
 			buildConfigurations = (
 				CB4ACDB123CE0791000B687F /* Debug */,
 				CB4ACDB223CE0791000B687F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB4ACDB323CE0791000B687F /* Build configuration list for PBXNativeTarget "CISSMUN2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB4ACDB423CE0791000B687F /* Debug */,
-				CB4ACDB523CE0791000B687F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB4ACDB623CE0791000B687F /* Build configuration list for PBXNativeTarget "CISSMUN2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB4ACDB723CE0791000B687F /* Debug */,
-				CB4ACDB823CE0791000B687F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

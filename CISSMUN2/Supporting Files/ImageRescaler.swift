@@ -6,6 +6,9 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
+//  Creates images where text is overlayed an image
+//  Called from virtually all primary views
+
 import SwiftUI
 
 struct ImageRescaler: View {
@@ -17,7 +20,7 @@ struct ImageRescaler: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: geo.size.width, height: 300)
-                .overlay(Text(self.text).foregroundColor(.white).font(.custom("Avenir Black", size: 24)).fontWeight(.bold), alignment: .center)
+                .overlay(Text(self.text).foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
                 .fixedSize(horizontal: false, vertical: true)
                 .edgesIgnoringSafeArea(.top)
                 .offset(y: -15)
