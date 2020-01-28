@@ -23,7 +23,10 @@ struct ScheduleView: View {
                             Spacer().frame(height: 10)
                             Text("Click on the button below to view a live-updating spreadsheet that shows current topics and speakers of each committee. Because this schedule is provisional, be wary of changes to the timetable.").font(.custom("Avenir Book", size: 17)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             Spacer().frame(height: 20)
-                            Text("Live updates require a VPN connection.                   ").font(.custom("Avenir Book", size: 17)).multilineTextAlignment(.leading).padding(.horizontal)
+                            HStack {
+                                Text("Live updates require a VPN connection.").font(.custom("Avenir Book", size: 17)).multilineTextAlignment(.leading).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                                Spacer()
+                            }
                             Spacer().frame(height: 10)
                             NavigationLink(destination: LiveViewController()) {
                                 Text("Live Updates")
@@ -48,7 +51,7 @@ struct ScheduleView: View {
                                                     HStack {
                                                         Text(event.name).font(.custom("Avenir Book", size: 18)).fontWeight(.bold).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                                                         Spacer()
-                                                        Text(event.time).font(.custom("Avenir Book", size: 15)).padding(.horizontal)
+                                                        Text(event.time).font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                                                     }
                                                     HStack{
                                                         Text(event.location).font(.custom("Avenir Book", size: 15)).padding(.horizontal)
