@@ -7,24 +7,7 @@
 //
 import SwiftUI
 
-struct Day: Codable, Identifiable, Hashable {
-    var id: Int
-    var date: String
-    var items: [Event]
-}
 
-struct Event: Codable, Identifiable, Hashable {
-    var id: Int
-    var name: String
-    var location: String
-    var time: String
-}
-
-struct Files: Identifiable, Hashable {
-    var id: Int
-    var displayname: String
-    var filename: String
-}
 
 let conference: [Day] = [
     Day(id: 1, date: "Friday, January 17", items: day1),
@@ -68,13 +51,4 @@ let day3: [Event] = [
     Event(id: 7, name: "Directors Meeting", location: "TBD", time: "2:00 PM - 2:30 PM"),
     Event(id: 8, name: "Closing Ceremony", location: "PC Gym (P106)", time: "3:30 PM - 4:30 PM"),
     Event(id: 9, name: "Adjournment", location: "", time: "4:45 PM")
-]
-
-let filelist: [Files] = [
-    Files(id: 1, displayname: "Cover Page", filename: "coverpage"),
-    Files(id: 2, displayname: "Preparatory Meeting Guidelines", filename: "prepmeetguides"),
-    Files(id: 3, displayname: "CISSMUN Rules of Procedure", filename: "cissrop"),
-    Files(id: 4, displayname: "Chairing at CISSMUN", filename: "munchair.pdf"),
-    Files(id: 5, displayname: "Appendix 1: THIMUN Rules of Procedure", filename: "thirop"),
-    Files(id: 6, displayname: "Appendix 2: United Nations Charter", filename: "uncharter")
 ]

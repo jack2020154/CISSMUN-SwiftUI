@@ -8,6 +8,21 @@
 
 import SwiftUI
 
+let filelist: [Files] = [
+    Files(id: 1, displayname: "Cover Page", filename: "coverpage"),
+    Files(id: 2, displayname: "Preparatory Meeting Guidelines", filename: "prepmeetguides"),
+    Files(id: 3, displayname: "CISSMUN Rules of Procedure", filename: "cissrop"),
+    Files(id: 4, displayname: "Chairing at CISSMUN", filename: "munchair.pdf"),
+    Files(id: 5, displayname: "Appendix 1: THIMUN Rules of Procedure", filename: "thirop"),
+    Files(id: 6, displayname: "Appendix 2: United Nations Charter", filename: "uncharter")
+]
+
+struct Files: Identifiable, Hashable {
+    var id: Int
+    var displayname: String
+    var filename: String
+}
+
 struct ProcedureView: View {
     var body: some View {
         GeometryReader { geo in
@@ -23,13 +38,14 @@ struct ProcedureView: View {
                             ForEach(filelist, id:\.self) { file in
                                 NavigationLink(destination: PDFViewController(dname: file.displayname,fname: file.filename)) {
                                     RoundedRectangle(cornerRadius: 0)
+                                        .foregroundColor(Color("reversedBackgroundColor"))
                                         .frame(width: geo.size.width, height: geo.size.height / 12)
                                         .shadow(radius: 10)
                                         .overlay(
                                             HStack {
-                                                Text(file.displayname).font(.custom("Avenir Book", size: geo.size.width / 22.0)).foregroundColor(Color.white).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                                                Text(file.displayname).font(.custom("Avenir Book", size: geo.size.width / 22.0)).foregroundColor(Color("reversedBlackWhite")).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                                                 Spacer()
-                                                Text(">").font(.custom("Avenir Book", size: 20)).foregroundColor(Color.white).padding(.horizontal)
+                                                Text(">").font(.custom("Avenir Book", size: 20)).foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
                                             }
                                         )
                                 }

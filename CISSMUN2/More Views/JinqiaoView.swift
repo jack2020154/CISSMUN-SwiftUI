@@ -10,9 +10,66 @@ import SwiftUI
 
 struct JinqiaoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            NavigationView {
+                ScrollView(.vertical, showsIndicators: false){
+                    ZStack {
+                        Color("backgroundColor")
+                        VStack {
+                            VStack {
+                                Image("jinqiao")
+                                    .resizable()
+                                    .frame(width: geo.size.width, height: geo.size.width * 0.66)
+                                    .overlay(Text("Jinqiao").foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
+                                    Text("Jinqiao is located in the middle of Pudong, and is most notable for its large number of international schools, comfortable environment, and relatively high proportion of foreigners. Jinqiao also governs a total of seven residential areas with a population of over 28,000").font(.custom("Avenir Book", size: 15)).italic().padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                            }
+                                VStack (spacing: 8){
+                                    NavigationLink(destination: JinqiaoAttractionView()) {
+                                        RoundedRectangle(cornerRadius: 0)
+                                            .foregroundColor(Color("reversedBackgroundColor"))
+                                            .frame(width: geo.size.width, height: geo.size.height / 13.0)
+                                            .overlay(
+                                                HStack {
+                                                Text("Attractions").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                                    Spacer()
+                                                    Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                                }
+                                            )
+                                    }
+                                    NavigationLink(destination: JinqiaoTransportationView()) {
+                                        RoundedRectangle(cornerRadius: 0)
+                                            .foregroundColor(Color("reversedBackgroundColor"))
+                                            .frame(width: geo.size.width, height: geo.size.height / 13.0)
+                                            .overlay(
+                                                HStack {
+                                                Text("Transportation").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                                    Spacer()
+                                                    Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                                }
+                                            )
+                                    }
+                                    NavigationLink(destination: JinqiaoDiningView()) {
+                                        RoundedRectangle(cornerRadius: 0)
+                                            .foregroundColor(Color("reversedBackgroundColor"))
+                                            .frame(width: geo.size.width, height: geo.size.height / 13.0)
+                                            .overlay(
+                                                HStack {
+                                                    Text("Dining").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                                    Spacer()
+                                            Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                        }
+                                    )
+                                    }
+                                }
+                            Spacer()
+                        }.frame(height: geo.size.height * 3.0 / 13.0 + geo.size.width * 0.66 + 300)
+                    }
+                }
+            }.edgesIgnoringSafeArea(.all)
+        }
     }
 }
+
 
 struct JinqiaoView_Previews: PreviewProvider {
     static var previews: some View {
