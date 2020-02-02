@@ -48,18 +48,6 @@ struct ShanghaiView: View {
                                                 }
                                             )
                                     }
-                                    NavigationLink(destination: ShanghaiDiningView()) {
-                                        RoundedRectangle(cornerRadius: 0)
-                                            .foregroundColor(Color("reversedBackgroundColor"))
-                                            .frame(width: geo.size.width, height: geo.size.height / 13.0)
-                                            .overlay(
-                                                HStack {
-                                                    Text("Dining").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
-                                                    Spacer()
-                                            Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
-                                        }
-                                    )
-                                    }
                                     NavigationLink(destination: ShanghaiSaturdayView()) {
                                         RoundedRectangle(cornerRadius: 0)
                                             .foregroundColor(Color("reversedBackgroundColor"))
@@ -74,7 +62,7 @@ struct ShanghaiView: View {
                                     }
                                 }
                             Spacer()
-                        }.frame(height: geo.size.height * 4.0 / 13.0 + geo.size.width * 0.66 + 400)
+                        }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: (UIDevice.current.hasNotch ? 170 : 100), trailing: 0))
                     }
                 }
             }.edgesIgnoringSafeArea(.all)

@@ -23,7 +23,7 @@ struct HomeView: View {
                         Image("welcome")
                             .resizable()
                             .frame(width: geo.size.width, height: geo.size.width * 0.66)
-                            .overlay(Text(geo.size.width.description).foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
+                            .overlay(Text("Welcome").foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
                         Spacer().frame(height: 10)
                         HStack {
                             VStack{
