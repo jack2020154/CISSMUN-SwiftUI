@@ -10,10 +10,37 @@
 //  Called from ProcedureView
 
 import SwiftUI
+import WebKit
 
-struct LiveViewController: View {
+struct LiveViewController: UIViewRepresentable {
+    func makeUIView(context: Context) -> WKWebView {
+        let webConfiguration = WKWebViewConfiguration()
+            return WKWebView(frame: .zero, configuration: webConfiguration)
+    }
+    func updateUIView(_ view: WKWebView, context: Context) {
+        let url = URL(string:"https://docs.google.com/spreadsheets/d/1_6kUJqVvWLaz3HnifV5gRBg_mUwaLVQUz32WUnZOfwg/edit?folder=0AOQShJ2WO7hHUk9PV")
+        let urlRequest = URLRequest(url: url!)
+        view.load(urlRequest as URLRequest)
+    }
+}
+
+struct LiveView: View {
+    @Environment(\.presentationMode) private var presentationMode
     var body: some View {
-        Text("Template Live View Controller")
+        GeometryReader { geo in
+            VStack {
+                LiveViewController()
+                    .frame(width: geo.size.width, height: geo.size.height * 0.9)
+                Spacer()
+                Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(Color.blue)
+                        .frame(width: geo.size.width - 10, height: geo.size.height * 0.1 - 7)
+                        .overlay(Text("Close").foregroundColor(Color.white).fontWeight(.bold))
+                        .padding(.bottom)
+                }
+            }
+        }
     }
 }
 

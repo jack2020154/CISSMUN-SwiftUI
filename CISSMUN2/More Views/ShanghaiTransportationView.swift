@@ -27,7 +27,7 @@ struct ShanghaiTransportationView: View {
                             }
                             Text("Despite Shanghai's large size, it's easy to get to Concordia no matter where you are. It has the second largest metro network in the world by length, stations, and annual ridership.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             VStack {
-                                NavigationLink(destination: PDFViewController(dname: "Additional Travel Details", fname: "shanghaitransport.pdf")) {
+                                NavigationLink(destination: PDFViewController(fname: "shanghaitransport").navigationBarTitle("Travel Details")) {
                                     RoundedRectangle(cornerRadius: 0)
                                         .frame(width: geo.size.width, height: 60)
                                         .foregroundColor(Color("reversedBackgroundColor"))

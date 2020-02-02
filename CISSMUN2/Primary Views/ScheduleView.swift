@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct ScheduleView: View {
+    @State private var showingPopover = false
     var body: some View {
-        NavigationView {
             ScrollView {
                 ZStack {
                     Color("backgroundColor")
@@ -28,7 +28,7 @@ struct ScheduleView: View {
                                 Spacer()
                             }
                             Spacer().frame(height: 10)
-                            NavigationLink(destination: LiveViewController()) {
+                            Button(action: {self.showingPopover = true}) {
                                 Text("Live Updates")
                                     .fontWeight(.bold)
                                     .font(.custom("Avenir Medium", size: 20))
@@ -37,6 +37,8 @@ struct ScheduleView: View {
                                     .cornerRadius(40)
                                     .foregroundColor(.white)
                                     .padding(10)
+                            }.sheet(isPresented: self.$showingPopover) {
+                                LiveView()
                             }
                             Spacer().frame(height: 10)
                             VStack {
@@ -67,7 +69,6 @@ struct ScheduleView: View {
                         }
                     }
                 }
-            }.navigationBarTitle("").navigationBarHidden(true)
         }
     }
 }

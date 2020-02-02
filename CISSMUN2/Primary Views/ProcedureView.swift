@@ -12,7 +12,7 @@ let filelist: [Files] = [
     Files(id: 1, displayname: "Cover Page", filename: "coverpage"),
     Files(id: 2, displayname: "Preparatory Meeting Guidelines", filename: "prepmeetguides"),
     Files(id: 3, displayname: "CISSMUN Rules of Procedure", filename: "cissrop"),
-    Files(id: 4, displayname: "Chairing at CISSMUN", filename: "munchair.pdf"),
+    Files(id: 4, displayname: "Chairing at CISSMUN", filename: "munchair"),
     Files(id: 5, displayname: "Appendix 1: THIMUN Rules of Procedure", filename: "thirop"),
     Files(id: 6, displayname: "Appendix 2: United Nations Charter", filename: "uncharter")
 ]
@@ -36,7 +36,7 @@ struct ProcedureView: View {
                             .overlay(Text("Procedure").foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
                         VStack {
                             ForEach(filelist, id:\.self) { file in
-                                NavigationLink(destination: PDFViewController(dname: file.displayname,fname: file.filename)) {
+                                NavigationLink(destination: PDFViewController(fname: file.filename).navigationBarTitle(file.displayname)) {
                                     RoundedRectangle(cornerRadius: 0)
                                         .foregroundColor(Color("reversedBackgroundColor"))
                                         .frame(width: geo.size.width, height: geo.size.height / 12)

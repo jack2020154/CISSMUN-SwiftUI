@@ -34,7 +34,7 @@ struct AttractionMapViewController: UIViewRepresentable {
 }
 
 struct PopupMapView: View {
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) private var presentationMode
     var lat: Double
     var long: Double
     var name: String

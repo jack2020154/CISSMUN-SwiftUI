@@ -9,16 +9,23 @@
 //  Displays the PDF documents
 //  Called from ProcedureView
 
-import SwiftUI
-import UIKit
-import PDFKit
 
-struct PDFViewController: View {
-    var dname: String
+import SwiftUI
+import WebKit
+
+struct PDFViewController: UIViewRepresentable {
     var fname: String
-    var body: some View {
-        VStack {
-            Text("Template PDFViewController")
+    func makeUIView(context: Context) -> WKWebView {
+        let webConfiguration = WKWebViewConfiguration()
+        return WKWebView(frame: .zero, configuration: webConfiguration)
+    }
+    
+    func updateUIView(_ view: WKWebView, context: Context) {
+        if let url = Bundle.main.url(forResource: fname, withExtension: "pdf") {
+            let urlRequest = URLRequest(url: url)
+            view.load(urlRequest as URLRequest)
+        } else {
+            print("PDF File not Found")
         }
     }
 }

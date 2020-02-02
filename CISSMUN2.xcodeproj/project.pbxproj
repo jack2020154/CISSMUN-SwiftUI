@@ -25,6 +25,12 @@
 		CBBC4F5B23E5BF71000B687F /* Declarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5A23E5BF71000B687F /* Declarations.swift */; };
 		CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionView.swift */; };
 		CBBC4F5F23E5C30F000B687F /* JinqiaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5E23E5C30F000B687F /* JinqiaoView.swift */; };
+		CBBC4F8323E6D3C4000B687F /* thirop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F7D23E6D3C3000B687F /* thirop.pdf */; };
+		CBBC4F8423E6D3C4000B687F /* prepmeetguides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F7E23E6D3C4000B687F /* prepmeetguides.pdf */; };
+		CBBC4F8523E6D3C4000B687F /* cissrop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F7F23E6D3C4000B687F /* cissrop.pdf */; };
+		CBBC4F8623E6D3C4000B687F /* uncharter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8023E6D3C4000B687F /* uncharter.pdf */; };
+		CBBC4F8723E6D3C4000B687F /* coverpage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8123E6D3C4000B687F /* coverpage.pdf */; };
+		CBBC4F8823E6D3C4000B687F /* munchair.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8223E6D3C4000B687F /* munchair.pdf */; };
 		CBBE820923E405AB000B687F /* JinqiaoDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */; };
 		CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEB623DEBEDA000B687F /* LegalView.swift */; };
 		CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */; };
@@ -55,6 +61,12 @@
 		CBBC4F5A23E5BF71000B687F /* Declarations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declarations.swift; sourceTree = "<group>"; };
 		CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoAttractionView.swift; sourceTree = "<group>"; };
 		CBBC4F5E23E5C30F000B687F /* JinqiaoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JinqiaoView.swift; sourceTree = "<group>"; };
+		CBBC4F7D23E6D3C3000B687F /* thirop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = thirop.pdf; sourceTree = "<group>"; };
+		CBBC4F7E23E6D3C4000B687F /* prepmeetguides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = prepmeetguides.pdf; sourceTree = "<group>"; };
+		CBBC4F7F23E6D3C4000B687F /* cissrop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cissrop.pdf; sourceTree = "<group>"; };
+		CBBC4F8023E6D3C4000B687F /* uncharter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = uncharter.pdf; sourceTree = "<group>"; };
+		CBBC4F8123E6D3C4000B687F /* coverpage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = coverpage.pdf; sourceTree = "<group>"; };
+		CBBC4F8223E6D3C4000B687F /* munchair.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = munchair.pdf; sourceTree = "<group>"; };
 		CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoDiningView.swift; sourceTree = "<group>"; };
 		CBC4EEB623DEBEDA000B687F /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiView.swift; sourceTree = "<group>"; };
@@ -94,6 +106,7 @@
 		CB4ACD8823CE078E000B687F /* CISSMUN2 */ = {
 			isa = PBXGroup;
 			children = (
+				CBBC4F8923E6D3C8000B687F /* PDFs */,
 				CBC4EEB923DEBF76000B687F /* Map VIews */,
 				CBC4EEB823DEBF65000B687F /* More Views */,
 				CBD0206023D9D74C000B687F /* Primary Views */,
@@ -127,6 +140,19 @@
 				CBBC4F5A23E5BF71000B687F /* Declarations.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBBC4F8923E6D3C8000B687F /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC4F7F23E6D3C4000B687F /* cissrop.pdf */,
+				CBBC4F8123E6D3C4000B687F /* coverpage.pdf */,
+				CBBC4F8223E6D3C4000B687F /* munchair.pdf */,
+				CBBC4F7E23E6D3C4000B687F /* prepmeetguides.pdf */,
+				CBBC4F7D23E6D3C3000B687F /* thirop.pdf */,
+				CBBC4F8023E6D3C4000B687F /* uncharter.pdf */,
+			);
+			path = PDFs;
 			sourceTree = "<group>";
 		};
 		CBC4EEB823DEBF65000B687F /* More Views */ = {
@@ -222,6 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBC4F8323E6D3C4000B687F /* thirop.pdf in Resources */,
+				CBBC4F8423E6D3C4000B687F /* prepmeetguides.pdf in Resources */,
+				CBBC4F8523E6D3C4000B687F /* cissrop.pdf in Resources */,
+				CBBC4F8623E6D3C4000B687F /* uncharter.pdf in Resources */,
+				CBBC4F8723E6D3C4000B687F /* coverpage.pdf in Resources */,
+				CBBC4F8823E6D3C4000B687F /* munchair.pdf in Resources */,
 				CB4ACD9623CE0790000B687F /* LaunchScreen.storyboard in Resources */,
 				CB4ACD9323CE0790000B687F /* Preview Assets.xcassets in Resources */,
 				CB4ACD9023CE0790000B687F /* Assets.xcassets in Resources */,

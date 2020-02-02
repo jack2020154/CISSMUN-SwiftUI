@@ -45,8 +45,8 @@ struct JinqiaoView: View {
                                                     Text("Dining").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
                                                     Spacer()
                                             Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
-                                        }
-                                    )
+                                                }
+                                            )
                                     }
                                 }
                             Spacer()
