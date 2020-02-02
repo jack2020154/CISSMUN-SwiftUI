@@ -53,8 +53,6 @@ struct JinqiaoAttractionView: View {
                         }
                     }
                     Spacer()
-                    //TODO: Use dynamic height based off array length rather than fixed size
-                    //FIXED: Close enough
                 }.frame(height: geo.size.height * 5.0 / 4.0 + (UIDevice.current.hasNotch ? 160 : 100))
             }
         }

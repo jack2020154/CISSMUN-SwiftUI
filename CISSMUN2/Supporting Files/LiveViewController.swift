@@ -18,8 +18,8 @@ struct LiveViewController: UIViewRepresentable {
             return WKWebView(frame: .zero, configuration: webConfiguration)
     }
     func updateUIView(_ view: WKWebView, context: Context) {
-        let url = URL(string:"https://docs.google.com/spreadsheets/d/1_6kUJqVvWLaz3HnifV5gRBg_mUwaLVQUz32WUnZOfwg/edit?folder=0AOQShJ2WO7hHUk9PV")
-        let urlRequest = URLRequest(url: url!)
+        let urlGdoc = URL(string:"https://docs.google.com/spreadsheets/d/1_6kUJqVvWLaz3HnifV5gRBg_mUwaLVQUz32WUnZOfwg/edit?folder=0AOQShJ2WO7hHUk9PV")
+        let urlRequest = URLRequest(url: urlGdoc!)
         view.load(urlRequest as URLRequest)
     }
 }

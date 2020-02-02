@@ -31,6 +31,7 @@
 		CBBC4F8623E6D3C4000B687F /* uncharter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8023E6D3C4000B687F /* uncharter.pdf */; };
 		CBBC4F8723E6D3C4000B687F /* coverpage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8123E6D3C4000B687F /* coverpage.pdf */; };
 		CBBC4F8823E6D3C4000B687F /* munchair.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8223E6D3C4000B687F /* munchair.pdf */; };
+		CBBC4F8C23E72277000B687F /* Travel Details.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8B23E72277000B687F /* Travel Details.pdf */; };
 		CBBE820923E405AB000B687F /* JinqiaoDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */; };
 		CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEB623DEBEDA000B687F /* LegalView.swift */; };
 		CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */; };
@@ -67,6 +68,7 @@
 		CBBC4F8023E6D3C4000B687F /* uncharter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = uncharter.pdf; sourceTree = "<group>"; };
 		CBBC4F8123E6D3C4000B687F /* coverpage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = coverpage.pdf; sourceTree = "<group>"; };
 		CBBC4F8223E6D3C4000B687F /* munchair.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = munchair.pdf; sourceTree = "<group>"; };
+		CBBC4F8B23E72277000B687F /* Travel Details.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Travel Details.pdf"; sourceTree = "<group>"; };
 		CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoDiningView.swift; sourceTree = "<group>"; };
 		CBC4EEB623DEBEDA000B687F /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		CBBC4F8923E6D3C8000B687F /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
+				CBBC4F8B23E72277000B687F /* Travel Details.pdf */,
 				CBBC4F7F23E6D3C4000B687F /* cissrop.pdf */,
 				CBBC4F8123E6D3C4000B687F /* coverpage.pdf */,
 				CBBC4F8223E6D3C4000B687F /* munchair.pdf */,
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBC4F8C23E72277000B687F /* Travel Details.pdf in Resources */,
 				CBBC4F8323E6D3C4000B687F /* thirop.pdf in Resources */,
 				CBBC4F8423E6D3C4000B687F /* prepmeetguides.pdf in Resources */,
 				CBBC4F8523E6D3C4000B687F /* cissrop.pdf in Resources */,
