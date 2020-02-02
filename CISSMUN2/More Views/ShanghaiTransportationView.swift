@@ -11,7 +11,7 @@ import SwiftUI
 struct ShanghaiTransportationView: View {
     var body: some View {
         GeometryReader{ geo in
-                ScrollView {
+            ScrollView {
                     ZStack {
                         Color("backgroundColor")
                         VStack (spacing: 8){
@@ -27,15 +27,15 @@ struct ShanghaiTransportationView: View {
                             }
                             Text("Despite Shanghai's large size, it's easy to get to Concordia no matter where you are. It has the second largest metro network in the world by length, stations, and annual ridership.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             VStack {
-                                NavigationLink(destination: PDFViewController(fname: "shanghaitransport").navigationBarTitle("Travel Details")) {
+                                NavigationLink(destination: PDFViewController(fname: "Travel Details").navigationBarTitle("Travel Details")) {
                                     RoundedRectangle(cornerRadius: 0)
-                                        .frame(width: geo.size.width, height: 60)
+                                        .frame(width: geo.size.width, height: 50)
                                         .foregroundColor(Color("reversedBackgroundColor"))
                                         .overlay(
                                             HStack {
-                                                Text("Additional Travel Details").font(.custom("Avenir Medium", size: 20)).fontWeight(.bold).padding(.horizontal).foregroundColor(Color("reversedBlackWhite"))
+                                                Text("Additional Travel Details").font(.custom("Avenir Medium", size: 20)).padding(.horizontal).foregroundColor(Color("reversedBlackWhite"))
                                                 Spacer()
-                                                Text(">").font(.custom("Avenir Medium", size: 20)).fontWeight(.bold).padding(.horizontal).foregroundColor(Color("reversedBlackWhite"))
+                                                Text(">").font(.custom("Avenir Medium", size: 20)).padding(.horizontal).foregroundColor(Color("reversedBlackWhite"))
                                             }
                                         )
                                 }
@@ -46,7 +46,7 @@ struct ShanghaiTransportationView: View {
                             }
                             Text("The CISSMUN administrative staff will arange a bus transfer (on arrival and/or departure) from Pudong or Hongqiao airport, or from any of the Shanghai Railway stations, for any school that requires it. Please fill out the Arrival/Desparture form at https://www.cissmun.org/arrivaldeparture-form/ to communicate your numbers and specific travel details.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             Text("The cost of buses to and from the airport/train station will be borne by the visiting schools, and will be included with the conference registration fees on your school's CISSMUN invoice. That cost is RMB 900.00 or USD 130.00 each way.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
-                        }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: (UIDevice.current.hasNotch ? 170 : 100), trailing: 0))
+                        }.padding([.top, .bottom])
                     }
             }
         }

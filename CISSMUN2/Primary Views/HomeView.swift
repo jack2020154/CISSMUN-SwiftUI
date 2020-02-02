@@ -53,7 +53,7 @@ struct HomeView: View {
                                 Text("I am honored to serve as the Secretary General for the eleventh annual session of CISSMUN. I am excited to welcome all of you to be a part of this platform for growth, education, communication, and diplomacy. On behalf of all, we hope that you will have a worthwhile experiance at CISSMUN XI.").font(.custom("Avenir Book", size: 17)).multilineTextAlignment(.leading).padding([.bottom, .horizontal]).fixedSize(horizontal: false, vertical: true)
                             }
                         }.cornerRadius(10).overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("blackWhite"))).padding([.top, .horizontal])
-                    }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: (UIDevice.current.hasNotch ? 0 : 10), trailing: 0))
+                    }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: 10, trailing: 0))
                 }
             }
         }

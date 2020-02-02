@@ -52,8 +52,7 @@ struct JinqiaoAttractionView: View {
                             }
                         }
                     }
-                    Spacer()
-                }.frame(height: geo.size.height * 5.0 / 4.0 + (UIDevice.current.hasNotch ? 160 : 100))
+                }
             }
         }
     }

@@ -35,7 +35,7 @@ struct ShanghaiView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: PDFViewController(fname: "Travel Details")) {
+                            NavigationLink(destination: ShanghaiTransportationView()) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)
@@ -61,10 +61,10 @@ struct ShanghaiView: View {
                             }
                         }
                         Spacer()
-                    }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: (UIDevice.current.hasNotch ? 170 : 100), trailing: 0))
-                }
+                    }
+                }.frame(minHeight: geo.size.height)
             }
-        }.edgesIgnoringSafeArea(.all).navigationBarTitle(Text("Shanghai"), displayMode: .inline)
+        }.navigationBarTitle(Text("Shanghai"), displayMode: .inline)
     }
 }
 

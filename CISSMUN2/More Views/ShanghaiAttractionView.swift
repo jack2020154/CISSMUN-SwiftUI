@@ -56,8 +56,7 @@ struct ShanghaiAttractionView: View {
                             }
                         }
                     }
-                    Spacer()
-                }.frame(height: geo.size.height * 7.0 / 4.0 + (UIDevice.current.hasNotch ? 160 : 100))
+                }
             }
         }
     }

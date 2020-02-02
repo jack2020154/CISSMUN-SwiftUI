@@ -49,8 +49,8 @@ struct JinqiaoView: View {
                             }
                         }
                         Spacer()
-                    }.padding(EdgeInsets.init(top: 0, leading: 0, bottom: (UIDevice.current.hasNotch ? 170 : 100), trailing: 0))
-                }
+                    }
+                }.frame(minHeight: geo.size.height)
             }
         }.navigationBarTitle(Text("Jinqiao"), displayMode: .inline)
     }
