@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CB46F03623E1447D000B687F /* ShanghaiAttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46F03523E1447D000B687F /* ShanghaiAttractionView.swift */; };
 		CB46F03823E14487000B687F /* ShanghaiTransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46F03723E14487000B687F /* ShanghaiTransportationView.swift */; };
-		CB46F03A23E14490000B687F /* ShanghaiDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46F03923E14490000B687F /* ShanghaiDiningView.swift */; };
 		CB46F03C23E14498000B687F /* ShanghaiSaturdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46F03B23E14498000B687F /* ShanghaiSaturdayView.swift */; };
 		CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8923CE078F000B687F /* AppDelegate.swift */; };
 		CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4ACD8B23CE078F000B687F /* SceneDelegate.swift */; };
@@ -24,9 +23,8 @@
 		CBA183B723D2C13F000B687F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA183B623D2C13F000B687F /* HomeView.swift */; };
 		CBBC4F5923E53FFA000B687F /* AttractionMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5823E53FFA000B687F /* AttractionMapViewController.swift */; };
 		CBBC4F5B23E5BF71000B687F /* Declarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5A23E5BF71000B687F /* Declarations.swift */; };
-		CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionVIew.swift */; };
+		CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionView.swift */; };
 		CBBC4F5F23E5C30F000B687F /* JinqiaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F5E23E5C30F000B687F /* JinqiaoView.swift */; };
-		CBBE820723E405A0000B687F /* JinqiaoTransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE820623E405A0000B687F /* JinqiaoTransportationView.swift */; };
 		CBBE820923E405AB000B687F /* JinqiaoDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */; };
 		CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEB623DEBEDA000B687F /* LegalView.swift */; };
 		CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */; };
@@ -39,7 +37,6 @@
 /* Begin PBXFileReference section */
 		CB46F03523E1447D000B687F /* ShanghaiAttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiAttractionView.swift; sourceTree = "<group>"; };
 		CB46F03723E14487000B687F /* ShanghaiTransportationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiTransportationView.swift; sourceTree = "<group>"; };
-		CB46F03923E14490000B687F /* ShanghaiDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiDiningView.swift; sourceTree = "<group>"; };
 		CB46F03B23E14498000B687F /* ShanghaiSaturdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiSaturdayView.swift; sourceTree = "<group>"; };
 		CB4ACD8623CE078E000B687F /* CISSMUN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CISSMUN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4ACD8923CE078F000B687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +53,8 @@
 		CBA183B623D2C13F000B687F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBBC4F5823E53FFA000B687F /* AttractionMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionMapViewController.swift; sourceTree = "<group>"; };
 		CBBC4F5A23E5BF71000B687F /* Declarations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declarations.swift; sourceTree = "<group>"; };
-		CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoAttractionVIew.swift; sourceTree = "<group>"; };
+		CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoAttractionView.swift; sourceTree = "<group>"; };
 		CBBC4F5E23E5C30F000B687F /* JinqiaoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JinqiaoView.swift; sourceTree = "<group>"; };
-		CBBE820623E405A0000B687F /* JinqiaoTransportationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoTransportationView.swift; sourceTree = "<group>"; };
 		CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoDiningView.swift; sourceTree = "<group>"; };
 		CBC4EEB623DEBEDA000B687F /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiView.swift; sourceTree = "<group>"; };
@@ -140,13 +136,11 @@
 				CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */,
 				CB46F03523E1447D000B687F /* ShanghaiAttractionView.swift */,
 				CB46F03723E14487000B687F /* ShanghaiTransportationView.swift */,
-				CB46F03923E14490000B687F /* ShanghaiDiningView.swift */,
 				CB46F03B23E14498000B687F /* ShanghaiSaturdayView.swift */,
 				CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */,
-				CBBE820623E405A0000B687F /* JinqiaoTransportationView.swift */,
-				CBC4EEBE23DEBFE3000B687F /* ContactView.swift */,
-				CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionVIew.swift */,
+				CBBC4F5C23E5C2F1000B687F /* JinqiaoAttractionView.swift */,
 				CBBC4F5E23E5C30F000B687F /* JinqiaoView.swift */,
+				CBC4EEBE23DEBFE3000B687F /* ContactView.swift */,
 			);
 			path = "More Views";
 			sourceTree = "<group>";
@@ -241,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionVIew.swift in Sources */,
+				CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionView.swift in Sources */,
 				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
 				CBBC4F5F23E5C30F000B687F /* JinqiaoView.swift in Sources */,
 				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
@@ -249,10 +243,8 @@
 				CB46F03823E14487000B687F /* ShanghaiTransportationView.swift in Sources */,
 				CBBE820923E405AB000B687F /* JinqiaoDiningView.swift in Sources */,
 				CBBC4F5B23E5BF71000B687F /* Declarations.swift in Sources */,
-				CBBE820723E405A0000B687F /* JinqiaoTransportationView.swift in Sources */,
 				CBBC4F5923E53FFA000B687F /* AttractionMapViewController.swift in Sources */,
 				CB4ACD8A23CE078F000B687F /* AppDelegate.swift in Sources */,
-				CB46F03A23E14490000B687F /* ShanghaiDiningView.swift in Sources */,
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
 				CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */,
 				CBC4EEBF23DEBFE3000B687F /* ContactView.swift in Sources */,
