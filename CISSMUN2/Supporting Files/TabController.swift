@@ -15,23 +15,23 @@ struct TabController: View{
     var body: some View {
         TabView (selection: $selection){
             ProcedureView().tabItem {
-                Image(systemName: "1.circle")
+                Image(systemName: "book")
                 Text("Procedure")
             }.tag(0)
             ScheduleView().tabItem {
-                Image(systemName: "2.circle")
+                Image(systemName: "calendar")
                 Text("Schedule")
             }.tag(1)
             HomeView().tabItem {
-                Image(systemName: "3.circle")
+                Image(systemName: "house")
                 Text("Home")
             }.tag(2)
             MapView().tabItem {
-                Image(systemName: "4.circle")
+                Image(systemName: "map")
                 Text("Map")
             }.tag(3)
             MoreView().tabItem {
-                Image(systemName: "5.circle")
+                Image(systemName: "ellipsis")
                 Text("More")
             }.tag(4)
         }

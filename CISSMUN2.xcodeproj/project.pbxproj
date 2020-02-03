@@ -32,13 +32,14 @@
 		CBBC4F8723E6D3C4000B687F /* coverpage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8123E6D3C4000B687F /* coverpage.pdf */; };
 		CBBC4F8823E6D3C4000B687F /* munchair.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8223E6D3C4000B687F /* munchair.pdf */; };
 		CBBC4F8C23E72277000B687F /* Travel Details.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8B23E72277000B687F /* Travel Details.pdf */; };
+		CBBC4F8E23E7E246000B687F /* Saturday Night Excursion.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBC4F8D23E7E245000B687F /* Saturday Night Excursion.pdf */; };
+		CBBC4F9023E7E3A0000B687F /* ShanghaiDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC4F8F23E7E3A0000B687F /* ShanghaiDiningView.swift */; };
 		CBBE820923E405AB000B687F /* JinqiaoDiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */; };
 		CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEB623DEBEDA000B687F /* LegalView.swift */; };
 		CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */; };
 		CBC4EEBF23DEBFE3000B687F /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEBE23DEBFE3000B687F /* ContactView.swift */; };
 		CBC4EEC723DF0BEF000B687F /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4EEC623DF0BEF000B687F /* PDFViewController.swift */; };
 		CBD0205F23D9B60E000B687F /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0205E23D9B60E000B687F /* LiveViewController.swift */; };
-		CBE7129223DAE815000B687F /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7129123DAE815000B687F /* EventList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,13 +70,14 @@
 		CBBC4F8123E6D3C4000B687F /* coverpage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = coverpage.pdf; sourceTree = "<group>"; };
 		CBBC4F8223E6D3C4000B687F /* munchair.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = munchair.pdf; sourceTree = "<group>"; };
 		CBBC4F8B23E72277000B687F /* Travel Details.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Travel Details.pdf"; sourceTree = "<group>"; };
+		CBBC4F8D23E7E245000B687F /* Saturday Night Excursion.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Saturday Night Excursion.pdf"; sourceTree = "<group>"; };
+		CBBC4F8F23E7E3A0000B687F /* ShanghaiDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiDiningView.swift; sourceTree = "<group>"; };
 		CBBE820823E405AB000B687F /* JinqiaoDiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinqiaoDiningView.swift; sourceTree = "<group>"; };
 		CBC4EEB623DEBEDA000B687F /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanghaiView.swift; sourceTree = "<group>"; };
 		CBC4EEBE23DEBFE3000B687F /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		CBC4EEC623DF0BEF000B687F /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		CBD0205E23D9B60E000B687F /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
-		CBE7129123DAE815000B687F /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,6 @@
 			children = (
 				CBBC4F5823E53FFA000B687F /* AttractionMapViewController.swift */,
 				CBD0205E23D9B60E000B687F /* LiveViewController.swift */,
-				CBE7129123DAE815000B687F /* EventList.swift */,
 				CBC4EEC623DF0BEF000B687F /* PDFViewController.swift */,
 				CB4ACD8D23CE078F000B687F /* TabController.swift */,
 				CBBC4F5A23E5BF71000B687F /* Declarations.swift */,
@@ -147,6 +148,7 @@
 		CBBC4F8923E6D3C8000B687F /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
+				CBBC4F8D23E7E245000B687F /* Saturday Night Excursion.pdf */,
 				CBBC4F8B23E72277000B687F /* Travel Details.pdf */,
 				CBBC4F7F23E6D3C4000B687F /* cissrop.pdf */,
 				CBBC4F8123E6D3C4000B687F /* coverpage.pdf */,
@@ -163,6 +165,7 @@
 			children = (
 				CBC4EEB623DEBEDA000B687F /* LegalView.swift */,
 				CBC4EEBA23DEBFD2000B687F /* ShanghaiView.swift */,
+				CBBC4F8F23E7E3A0000B687F /* ShanghaiDiningView.swift */,
 				CB46F03523E1447D000B687F /* ShanghaiAttractionView.swift */,
 				CB46F03723E14487000B687F /* ShanghaiTransportationView.swift */,
 				CB46F03B23E14498000B687F /* ShanghaiSaturdayView.swift */,
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBC4F8E23E7E246000B687F /* Saturday Night Excursion.pdf in Resources */,
 				CBBC4F8C23E72277000B687F /* Travel Details.pdf in Resources */,
 				CBBC4F8323E6D3C4000B687F /* thirop.pdf in Resources */,
 				CBBC4F8423E6D3C4000B687F /* prepmeetguides.pdf in Resources */,
@@ -273,6 +277,7 @@
 			files = (
 				CBBC4F5D23E5C2F1000B687F /* JinqiaoAttractionView.swift in Sources */,
 				CBA183B523D2BFCB000B687F /* MoreView.swift in Sources */,
+				CBBC4F9023E7E3A0000B687F /* ShanghaiDiningView.swift in Sources */,
 				CBBC4F5F23E5C30F000B687F /* JinqiaoView.swift in Sources */,
 				CBA183B123D2BFB3000B687F /* ScheduleView.swift in Sources */,
 				CBA183B323D2BFC0000B687F /* MapView.swift in Sources */,
@@ -284,7 +289,6 @@
 				CB4ACD8C23CE078F000B687F /* SceneDelegate.swift in Sources */,
 				CBC4EEB723DEBEDA000B687F /* LegalView.swift in Sources */,
 				CBC4EEBF23DEBFE3000B687F /* ContactView.swift in Sources */,
-				CBE7129223DAE815000B687F /* EventList.swift in Sources */,
 				CBA183B723D2C13F000B687F /* HomeView.swift in Sources */,
 				CBC4EEC723DF0BEF000B687F /* PDFViewController.swift in Sources */,
 				CBC4EEBB23DEBFD2000B687F /* ShanghaiView.swift in Sources */,

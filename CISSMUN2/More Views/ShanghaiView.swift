@@ -23,7 +23,7 @@ struct ShanghaiView: View {
                                 Text("Shanghai is the largest city by population in the People's Republic of China and one of the largest in the world. Often called the \"showpeice\" of the new China, Shanghai offers visitors a cosmopolitan blend of traditiona nd modernity, a place where ancient historical sites blend seamlessly with one of the world's most modern and spectacular skylines.").font(.custom("Avenir Book", size: 15)).italic().padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                         }
                         VStack (spacing: 8){
-                            NavigationLink(destination: ShanghaiAttractionView()) {
+                            NavigationLink(destination: ShanghaiAttractionView().navigationBarTitle("Shanghai Attractions", displayMode: .inline)) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)
@@ -35,7 +35,7 @@ struct ShanghaiView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ShanghaiTransportationView()) {
+                            NavigationLink(destination: ShanghaiTransportationView().navigationBarTitle("Transportation", displayMode: .inline)) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)
@@ -47,7 +47,19 @@ struct ShanghaiView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ShanghaiSaturdayView()) {
+                            NavigationLink(destination: ShanghaiDiningView().navigationBarTitle("Shanghai Dining", displayMode: .inline)) {
+                                RoundedRectangle(cornerRadius: 0)
+                                    .foregroundColor(Color("reversedBackgroundColor"))
+                                    .frame(width: geo.size.width, height: geo.size.height / 13.0)
+                                    .overlay(
+                                        HStack {
+                                        Text("Dining").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                            Spacer()
+                                            Text(">").foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
+                                        }
+                                    )
+                            }
+                            NavigationLink(destination: PDFViewController(fname: "Saturday Night Excursion").navigationBarTitle("Saturday Night Excursion", displayMode: .inline)) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)

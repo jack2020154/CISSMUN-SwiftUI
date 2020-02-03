@@ -23,7 +23,7 @@ struct JinqiaoView: View {
                                 Text("Jinqiao is located in the middle of Pudong, and is most notable for its large number of international schools, comfortable environment, and relatively high proportion of foreigners. Jinqiao also governs a total of seven residential areas with a population of over 28,000").font(.custom("Avenir Book", size: 15)).italic().padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                         }
                         VStack (spacing: 8){
-                            NavigationLink(destination: JinqiaoAttractionView()) {
+                            NavigationLink(destination: JinqiaoAttractionView().navigationBarTitle("Jinqiao Attractions", displayMode: .inline)) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)
@@ -35,7 +35,7 @@ struct JinqiaoView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: JinqiaoDiningView()) {
+                            NavigationLink(destination: JinqiaoDiningView().navigationBarTitle("Jinqiao Dining", displayMode: .inline)) {
                                 RoundedRectangle(cornerRadius: 0)
                                     .foregroundColor(Color("reversedBackgroundColor"))
                                     .frame(width: geo.size.width, height: geo.size.height / 13.0)
