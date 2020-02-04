@@ -6,8 +6,7 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
-//  Displays the PDF documents
-//  Called from ProcedureView
+//  Displays PDF documents
 
 
 import SwiftUI

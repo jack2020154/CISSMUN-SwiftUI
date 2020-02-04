@@ -19,8 +19,7 @@ struct ShanghaiTransportationView: View {
                                 Text("To/From Shanghai").font(.custom("Avenir Medium", size: 20)).fontWeight(.bold).padding(.horizontal)
                                 Spacer()
                             }
-                            Text("Shanghai is served by two international airports with daily flights from many Chinese cities, most Asian capitals and many other American and European destinations. Shanghai is also a major hub for China's high-speed rail network, with efficient service from Beijing, Hong Kong and many other cities.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
-                            Text("Schools are expected to make their own travel arrangements, but please feel free to contact us if you require assistance in obtaining the necessary entrace visas.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                            Text("Shanghai is served by two international airports with daily flights from many Chinese cities, most Asian capitals and many other American and European destinations. Shanghai is also a major hub for China's high-speed rail network, with efficient service from Beijing, Hong Kong and many other cities.\n\nSchools are expected to make their own travel arrangements, but please feel free to contact us if you require assistance in obtaining the necessary entrace visas.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             HStack {
                                 Text("To/From Concordia").font(.custom("Avenir Medium", size: 20)).fontWeight(.bold).padding(.horizontal)
                                 Spacer()
@@ -44,8 +43,7 @@ struct ShanghaiTransportationView: View {
                                 Text("Airport Transfers").font(.custom("Avenir Medium", size: 20)).fontWeight(.bold).padding(.horizontal)
                                 Spacer()
                             }
-                            Text("The CISSMUN administrative staff will arange a bus transfer (on arrival and/or departure) from Pudong or Hongqiao airport, or from any of the Shanghai Railway stations, for any school that requires it. Please fill out the Arrival/Desparture form at https://www.cissmun.org/arrivaldeparture-form/ to communicate your numbers and specific travel details.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
-                            Text("The cost of buses to and from the airport/train station will be borne by the visiting schools, and will be included with the conference registration fees on your school's CISSMUN invoice. That cost is RMB 900.00 or USD 130.00 each way.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                            Text("The CISSMUN administrative staff will arange a bus transfer (on arrival and/or departure) from Pudong or Hongqiao airport, or from any of the Shanghai Railway stations, for any school that requires it. Please fill out the Arrival/Desparture form at https://www.cissmun.org/arrivaldeparture-form/ to communicate your numbers and specific travel details.\n\nThe cost of buses to and from the airport/train station will be borne by the visiting schools, and will be included with the conference registration fees on your school's CISSMUN invoice. That cost is RMB 900.00 or USD 130.00 each way.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                         }.padding([.top, .bottom])
                     }
             }

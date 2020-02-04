@@ -15,7 +15,7 @@ struct JinqiaoDiningView: View {
         GeometryReader { geo in
             ScrollView {
                 ZStack {
-                    Color("backgroundColor")
+                    Color("reversedBackgroundColor")
                     VStack (spacing: 5){
                         ForEach(jqRestaurants, id:\.self) { restaurant in
                             Button(action: {
@@ -23,7 +23,7 @@ struct JinqiaoDiningView: View {
                                 self.modalSelection = restaurant.id
                             }) {
                                 ZStack {
-                                    Color("reversedBackgroundColor")
+                                    Color("backgroundColor")
                                     HStack {
                                         Image(restaurant.image)
                                             .resizable()
@@ -31,9 +31,9 @@ struct JinqiaoDiningView: View {
                                             .frame(width: geo.size.width / 5.0, height: geo.size.width / 5.0)
                                             .padding(.leading)
                                         VStack {
-                                            HStack {Text(restaurant.name).font(.custom("Avenir Medium", size: 15)).fontWeight(.bold).foregroundColor(Color("reversedBlackWhite")); Spacer(); Image(systemName: "ellipsis").padding(.horizontal)}
-                                            HStack {Text(restaurant.style).font(.custom("Avenir Book", size: 13)).foregroundColor(Color("reversedBlackWhite")); Spacer()}
-                                            HStack {Text(restaurant.price + " - " + restaurant.location).font(.custom("Avenir Book", size: 12)).italic().foregroundColor(Color("reversedBlackWhite")); Spacer()}
+                                            HStack {Text(restaurant.name).font(.custom("Avenir Medium", size: 15)).fontWeight(.bold).foregroundColor(Color("blackWhite")); Spacer(); Image(systemName: "ellipsis.circle.fill").padding(.horizontal)}
+                                            HStack {Text(restaurant.style).font(.custom("Avenir Book", size: 13)).foregroundColor(Color("blackWhite")); Spacer()}
+                                            HStack {Text(restaurant.price + " - " + restaurant.location).font(.custom("Avenir Book", size: 12)).italic().foregroundColor(Color("blackWhite")); Spacer()}
                                         }
                                     }.frame(width: geo.size.width - 5, height: geo.size.width / 5.0 + 10)
                                 }

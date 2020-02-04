@@ -6,8 +6,6 @@
 //  Copyright © 2020 Jack Wang. All rights reserved.
 //
 
-//  Basically the first file that gets called when the app is launched. The application function completes everything to be done before the app loads, and returns true when finished handing control to SceneDelegate
-
 import UIKit
 
 @UIApplicationMain
