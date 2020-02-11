@@ -9,13 +9,13 @@
 import SwiftUI
 
 let shAttractions: [Attraction] = [
-    Attraction(id: 1, name: "Disneyland (迪斯尼乐园)", image: "disney",description: shDescriptions[0], locationlat: 31.1431690, locationlong: 121.6579875, addressEN: "34 Huangzhao Road, Chuangsha District", addressCN: "黄赵路310号，川沙镇"),
-    Attraction(id: 2, name: "The Bund (外滩)", image: "bund", description: shDescriptions[1], locationlat: 31.2389930, locationlong: 121.4905150, addressEN: "1 Zhongshan East Road, Huangpu District", addressCN: "中山东路一号，黄浦区"),
-    Attraction(id: 3, name: "French Concession (法租界)", image: "french concession", description: shDescriptions[2], locationlat: 31.2097880, locationlong: 121.4692920, addressEN: "210 Taikang Road, Huangpu District", addressCN: "泰康路210号，黄浦区"),
-    Attraction(id: 4, name: "Yu Garden (豫园)", image: "yu garden", description: shDescriptions[3], locationlat: 31.2272199, locationlong: 121.4920953, addressEN: "218 Anren Road, Huangpu District", addressCN: "安仁路218号，黄浦区"),
-    Attraction(id: 5, name: "Jing'an Temple (静安寺)", image: "jing'an temple", description: shDescriptions[4], locationlat: 31.2230700, locationlong: 121.4455956, addressEN: "1686 Nanjing West Road, Jingan District", addressCN: "南京西路1686号，静安区"),
-    Attraction(id: 6, name: "The Pearl Tower (东方明珠电视塔)", image: "pearl tower", description: shDescriptions[5], locationlat: 31.2399270, locationlong: 121.4996843, addressEN: "1 Century Avenue, Lujiazui District", addressCN: "世纪大道一号，陆家嘴"),
-    Attraction(id: 7, name: "Shanghai Tower (上海中心大厦)", image: "shanghai tower", description: shDescriptions[6], locationlat: 31.2334018, locationlong: 121.5055684, addressEN: "510 Yincheng Middle Road, Lujiazui District", addressCN: "银城路501号，陆家嘴")
+    Attraction(id: 1, name: "Disneyland (迪斯尼乐园)", image: "disney",description: shDescriptions[0], locationlat: 31.1431690, locationlong: 121.6579875, addressEN: "34 Huangzhao Road, Chuangsha District", addressCN: "黄赵路310号，川沙镇", addressmap: "Disneyland (迪斯尼乐园)"),
+    Attraction(id: 2, name: "The Bund (外滩)", image: "bund", description: shDescriptions[1], locationlat: 31.2389930, locationlong: 121.4905150, addressEN: "1 Zhongshan East Road, Huangpu District", addressCN: "中山东路一号，黄浦区", addressmap: "The Bund (外滩)"),
+    Attraction(id: 3, name: "French Concession (法租界)", image: "french concession", description: shDescriptions[2], locationlat: 31.2097880, locationlong: 121.4692920, addressEN: "210 Taikang Road, Huangpu District", addressCN: "泰康路210号，黄浦区", addressmap: "French Concession (法租界)"),
+    Attraction(id: 4, name: "Yu Garden (豫园)", image: "yu garden", description: shDescriptions[3], locationlat: 31.2272199, locationlong: 121.4920953, addressEN: "218 Anren Road, Huangpu District", addressCN: "安仁路218号，黄浦区", addressmap: "Yu Garden (豫园)"),
+    Attraction(id: 5, name: "Jing'an Temple (静安寺)", image: "jing'an temple", description: shDescriptions[4], locationlat: 31.2230700, locationlong: 121.4455956, addressEN: "1686 Nanjing West Road, Jingan District", addressCN: "南京西路1686号，静安区", addressmap: "Jing'an Temple (静安寺)"),
+    Attraction(id: 6, name: "The Pearl Tower (东方明珠电视塔)", image: "pearl tower", description: shDescriptions[5], locationlat: 31.2399270, locationlong: 121.4996843, addressEN: "1 Century Avenue, Lujiazui District", addressCN: "世纪大道一号，陆家嘴", addressmap: "The Pearl Tower (东方明珠电视塔)"),
+    Attraction(id: 7, name: "Shanghai Tower (上海中心大厦)", image: "shanghai tower", description: shDescriptions[6], locationlat: 31.2334018, locationlong: 121.5055684, addressEN: "510 Yincheng Middle Road, Lujiazui District", addressCN: "银城路501号，陆家嘴", addressmap: "Shanghai Tower (上海中心大厦)")
 ]
 
 let shDescriptions: [String] = [
@@ -52,7 +52,7 @@ struct ShanghaiAttractionView: View {
                                         }
                                     )
                             }.sheet(isPresented: self.$showingPopover) {
-                                PopupMapView(lat: shAttractions[self.modalSelection - 1].locationlat, long: shAttractions[self.modalSelection - 1].locationlong, name: shAttractions[self.modalSelection - 1].name, addressEN: shAttractions[self.modalSelection - 1].addressEN, addressCN: shAttractions[self.modalSelection - 1].addressCN)
+                                PopupMapView(lat: shAttractions[self.modalSelection - 1].locationlat, long: shAttractions[self.modalSelection - 1].locationlong, name: shAttractions[self.modalSelection - 1].name, addressEN: shAttractions[self.modalSelection - 1].addressEN, addressCN: shAttractions[self.modalSelection - 1].addressCN, addressmap: shAttractions[self.modalSelection - 1].addressmap)
                             }
                         }
                     }

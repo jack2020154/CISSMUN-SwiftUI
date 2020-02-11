@@ -10,13 +10,6 @@
 
 import SwiftUI
 
-extension UIDevice {
-    var hasNotch: Bool {
-        let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
-        return bottom > 0
-    }
-}
-
 struct Day: Codable, Identifiable, Hashable {
     var id: Int
     var date: String
@@ -39,6 +32,7 @@ struct Attraction: Identifiable, Hashable {
     var locationlong: Double
     var addressEN: String
     var addressCN: String
+    var addressmap: String
 }
 
 struct Restaurant: Identifiable, Hashable {
@@ -52,6 +46,7 @@ struct Restaurant: Identifiable, Hashable {
     var locationlong: Double
     var addressEN: String
     var addressCN: String
+    var addressmap: String
 }
 
 struct Committee: Identifiable, Hashable {
@@ -135,25 +130,25 @@ let floorMaps: [Floor] = [
 ]
 
 let jqRestaurants : [Restaurant] = [
-    Restaurant(id: 1, name: "Yang's Fried Dumplings", image: "yangs", style: "Taiwanese, Fast Food", price: "$", location: "Carrefour", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 2, name: "Yi Dian Dian (Bubble Tea)", image: "yidiandian", style: "Taiwanese, Bubble Tea and Drinks", price: "$", location: "Carrefour", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 3, name: "New York Style Pizza", image: "nypizza", style: "American, Pizza", price: "$$", location: "Jinqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 4, name: "Chi-Chi Sushi", image: "chichi", style: "Japanese, Sushi", price: "$$", location: "Jinqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 5, name: "Pistolera", image: "pistolera", style: "Mexican", price: "$$$", location: "Jinqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 6, name: "Blue Frog", image: "bluefrog", style: "American", price: "$$$", location: "Jinqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 7, name: "Starbucks", image: "starbuck", style: "Cafe", price: "$$", location: "Jinqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: "")
+    Restaurant(id: 1, name: "Yang's Fried Dumplings", image: "yangs", style: "Taiwanese, Fast Food", price: "$", location: "Carrefour", locationlat: 31.2394523, locationlong: 121.5811832, addressEN: "555 Biyun Road, Jinqiao", addressCN: "碧云路555号金桥购物中心F1楼，浦东新区", addressmap: "No.555, Biyun Road No. Jinqiao Shopping Center F F1, Pudong Shanghai China"),
+    Restaurant(id: 2, name: "Yi Dian Dian (Bubble Tea)", image: "yidiandian", style: "Taiwanese, Bubble Tea and Drinks", price: "$", location: "Carrefour", locationlat: 31.2390129, locationlong: 121.5810528, addressEN: "555 Biyun Road, Jinqiao", addressCN: "碧云路555号金桥购物中心F1楼，浦东新区", addressmap: "No.555, Biyun Road No. Jinqiao Shopping Center F F1, Pudong Shanghai China"),
+    Restaurant(id: 3, name: "New York Style Pizza", image: "nypizza", style: "American, Pizza", price: "$$", location: "Jinqiao", locationlat: 31.2420590, locationlong: 121.5917490, addressEN: "336 Hongfeng Road, Pudong", addressCN: "红枫路336号，浦东新区", addressmap: "No.336, Hongfeng Road, Pudong Shanghai China"),
+    Restaurant(id: 4, name: "Chi-Chi Sushi", image: "chichi", style: "Japanese, Sushi", price: "$$", location: "Jinqiao", locationlat: 31.2401200, locationlong: 121.5824355, addressEN: "633 Biyun Road, Jinqiao", addressCN: "碧云路633号碧云体育休闲中心，浦东新区", addressmap: "No.633, Biyun Road No. Biyun Sports Leisure Center F1, Pudong Shanghai China"),
+    Restaurant(id: 5, name: "Pistolera", image: "pistolera", style: "Mexican", price: "$$$", location: "Jinqiao", locationlat: 31.2415532, locationlong: 121.5865207, addressEN: "855 Biyun Road, Jinqiao", addressCN: "碧云路855号，浦东新区", addressmap: "No.855, Biyun Road (Jin Huangyang Road), Pudong Shanghai China"),
+    Restaurant(id: 6, name: "Blue Frog", image: "bluefrog", style: "American", price: "$$$", location: "Jinqiao", locationlat: 31.2394251, locationlong: 121.5828985, addressEN: "633 Biyun Road, Jinqiao", addressCN: "碧云路633号碧云体育休闲中心，浦东新区", addressmap: "No.633, Biyun Road No. Biyun Sports Leisure Center F1, Pudong Shanghai China"),
+    Restaurant(id: 7, name: "Starbucks", image: "starbuck", style: "Cafe", price: "$$", location: "Jinqiao", locationlat: 31.2395521, locationlong: 121.5830393, addressEN: "633 Biyun Road, Jinqiao", addressCN: "碧云路633号碧云体育休闲中心，浦东新区", addressmap: "No.633, Biyun Road No. Biyun International Community Biyun Sports Leisure Center Floor 1-2, Pudong Shanghai China")
 ]
 
 let shRestaurants : [Restaurant] = [
-    Restaurant(id: 1, name: "Taco Bell", image: "taco bell", style: "Mexican, Fast Food", price: "$", location: "Lujiazui", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 2, name: "Taoyuan Village", image: "taoyuan village", style: "Asian", price: "$", location: "Jing'an", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 3, name: "BiQiYa Korean", image: "biqiya", style: "Korean", price: "$", location: "Yangpu", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 4, name: "Urban Soup Kitchen", image: "urban soup", style: "European, Soups", price: "$", location: "Century Park", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 5, name: "Pizza Express", image: "pizza express", style: "Italian, Pizza", price: "$$-$$$", location: "Lujiazui", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 6, name: "Din Tai Fung", image: "dintaifung", style: "Chinese", price: "$$-$$$", location: "Lujiazui", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 7, name: "Lost Haven", image: "lost heaven", style: "Chinese", price: "$$-$$$", location: "Former French Concession", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 8, name: "Ginger Modern Asian Bistro", image: "ginger", style: "Asian, International", price: "$$-$$$", location: "Former French Concession", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: ""),
-    Restaurant(id: 9, name: "Haidilao Hot Pot", image: "haidilao", style: "Chinese", price: "$$-$$$", location: "Dapuqiao", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: "")
+    Restaurant(id: 1, name: "Taco Bell", image: "taco bell", style: "Mexican, Fast Food", price: "$", location: "Lujiazui", locationlat: 31.2383270, locationlong: 121.5023220, addressEN: "55 Century Avenue, Building 1, Lujiazui", addressCN: "世纪大道55号1楼", addressmap: ""),
+    Restaurant(id: 2, name: "Taoyuan Village", image: "taoyuan village", style: "Asian", price: "$", location: "Jing'an", locationlat: 31.2251490, locationlong: 121.4814640, addressEN: "89 East Huaihai Road, Jing'an", addressCN: "淮海东路89弄，静安", addressmap: ""),
+    Restaurant(id: 3, name: "BiQiYa Korean", image: "biqiya", style: "Korean", price: "$", location: "Yangpu", locationlat: 31.2440210, locationlong: 121.3994340, addressEN: "768 Yangliuqing Road, Putuo", addressCN: "杨柳青路768号，杨浦", addressmap: ""),
+    //Can't find: Restaurant(id: 4, name: "Urban Soup Kitchen", image: "urban soup", style: "European, Soups", price: "$", location: "Century Park", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: "", addressmap: ""),
+    Restaurant(id: 4, name: "Pizza Express", image: "pizza express", style: "Italian, Pizza", price: "$$-$$$", location: "Lujiazui", locationlat: 31.12894654, locationlong: 121.5103861, addressEN: "Near 3498 Dongfang Road, Lujiazui", addressCN: "靠近东方路3498弄，陆家嘴", addressmap: ""),
+    Restaurant(id: 5, name: "Din Tai Fung", image: "dintaifung", style: "Chinese", price: "$$-$$$", location: "Lujiazui", locationlat: 31.2349480, locationlong: 121.5076740, addressEN: "100 Century Avenue, Lujiazui", addressCN: "世纪大道100号，陆家嘴", addressmap: ""),
+    Restaurant(id: 6, name: "Lost Haven", image: "lost heaven", style: "Chinese", price: "$$-$$$", location: "Former French Concession", locationlat: 31.2099270, locationlong: 121.4379840, addressEN: "38 Gaoyou Road, Xuhui", addressCN: "高邮路38号，徐汇", addressmap: ""),
+    // Permanently Closed: Restaurant(id: 7, name: "Ginger Modern Asian Bistro", image: "ginger", style: "Asian, International", price: "$$-$$$", location: "Former French Concession", locationlat: 0.0, locationlong: 0.0, addressEN: "", addressCN: "", addressmap: ""),
+    Restaurant(id: 7, name: "Haidilao Hot Pot", image: "haidilao", style: "Chinese", price: "$$-$$$", location: "Dapuqiao", locationlat: 31.2048088, locationlong: 121.4703001, addressEN: "1 Dapu Road, Dapuqiao", addressCN: "打浦路1号，打浦桥", addressmap: "")
 ]
 
 let conference: [Day] = [

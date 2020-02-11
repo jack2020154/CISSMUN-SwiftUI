@@ -38,7 +38,7 @@ struct JinqiaoDiningView: View {
                                     }.frame(width: geo.size.width - 5, height: geo.size.width / 5.0 + 10)
                                 }
                             }.sheet(isPresented: self.$showingPopover) {
-                                PopupMapView(lat: jqRestaurants[self.modalSelection - 1].locationlat, long: jqRestaurants[self.modalSelection - 1].locationlong, name: jqRestaurants[self.modalSelection - 1].name, addressEN: jqRestaurants[self.modalSelection - 1].addressEN, addressCN: jqRestaurants[self.modalSelection - 1].addressCN)
+                                PopupMapView(lat: jqRestaurants[self.modalSelection - 1].locationlat, long: jqRestaurants[self.modalSelection - 1].locationlong, name: jqRestaurants[self.modalSelection - 1].name, addressEN: jqRestaurants[self.modalSelection - 1].addressEN, addressCN: jqRestaurants[self.modalSelection - 1].addressCN, addressmap: jqRestaurants[self.modalSelection - 1].addressmap)
                             }
                         }.shadow(radius: 5)
                     }.padding([.top, .bottom]).frame(minHeight: geo.size.height)

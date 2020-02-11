@@ -44,6 +44,13 @@ struct ShanghaiTransportationView: View {
                                 Spacer()
                             }
                             Text("The CISSMUN administrative staff will arange a bus transfer (on arrival and/or departure) from Pudong or Hongqiao airport, or from any of the Shanghai Railway stations, for any school that requires it. Please fill out the Arrival/Desparture form at https://www.cissmun.org/arrivaldeparture-form/ to communicate your numbers and specific travel details.\n\nThe cost of buses to and from the airport/train station will be borne by the visiting schools, and will be included with the conference registration fees on your school's CISSMUN invoice. That cost is RMB 900.00 or USD 130.00 each way.").font(.custom("Avenir Book", size: 15)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                            Button(action: {
+                                if let url = URL(string: "https://cissmun.org/arrivaldeparture-form") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }) {
+                                Text("Go to Arrival/Departure Form").foregroundColor(Color.blue)
+                            }
                         }.padding([.top, .bottom])
                     }
             }

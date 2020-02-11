@@ -27,32 +27,34 @@ struct ProcedureView: View {
     var body: some View {
         GeometryReader { geo in
             NavigationView {
-                ZStack {
-                    Color("backgroundColor")
-                    VStack {
-                        Image("procedure")
-                            .resizable()
-                            .frame(width: geo.size.width, height: geo.size.width * 0.66)
-                            .overlay(Text("Procedure").foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
+                ScrollView {
+                    ZStack {
+                        Color("reversedBackgroundColor")
                         VStack {
-                            ForEach(filelist, id:\.self) { file in
-                                NavigationLink(destination: PDFViewController(fname: file.filename).navigationBarTitle(file.displayname)) {
-                                    RoundedRectangle(cornerRadius: 0)
-                                        .foregroundColor(Color("reversedBackgroundColor"))
-                                        .frame(width: geo.size.width, height: geo.size.height / 12)
-                                        .shadow(radius: 10)
-                                        .overlay(
-                                            HStack {
-                                                Text(file.displayname).font(.custom("Avenir Book", size: geo.size.width / 22.0)).foregroundColor(Color("reversedBlackWhite")).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
-                                                Spacer()
-                                                Text(">").font(.custom("Avenir Book", size: 20)).foregroundColor(Color("reversedBlackWhite")).padding(.horizontal)
-                                            }
-                                        )
+                            Image("procedure")
+                                .resizable()
+                                .frame(width: geo.size.width, height: geo.size.width * 0.66)
+                                .overlay(Text("Procedure").foregroundColor(.white).font(.custom("Avenir Book", size: 24)).fontWeight(.bold), alignment: .center)
+                            VStack {
+                                ForEach(filelist, id:\.self) { file in
+                                    NavigationLink(destination: PDFViewController(fname: file.filename).navigationBarTitle(file.displayname)) {
+                                        RoundedRectangle(cornerRadius: 0)
+                                            .foregroundColor(Color("backgroundColor"))
+                                            .frame(width: geo.size.width, height: geo.size.height / 12)
+                                            .shadow(radius: 10)
+                                            .overlay(
+                                                HStack {
+                                                    Text(file.displayname).font(.custom("Avenir Book", size: geo.size.width / 22.0)).foregroundColor(Color("blackWhite")).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                                                    Spacer()
+                                                    Text(">").font(.custom("Avenir Book", size: 20)).foregroundColor(Color("blackWhite")).padding(.horizontal)
+                                                }
+                                            )
+                                    }
                                 }
                             }
-                        }
-                    }.edgesIgnoringSafeArea(.all)
-                }.navigationBarTitle("Documents", displayMode: .inline)
+                        }.padding(.bottom)
+                    }.navigationBarTitle("Documents", displayMode: .inline)
+                }
             }
         }
     }

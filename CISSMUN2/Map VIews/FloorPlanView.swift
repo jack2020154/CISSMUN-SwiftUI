@@ -18,13 +18,16 @@ struct FloorPlanView: View {
     }
     var body: some View {
         GeometryReader { geo in
-            VStack {
-                Text(self.floordata.committee.name)
-                Text(self.floordata.floor.description)
+            ZStack {
+                Color("backgroundColor")
+                VStack {
+                Text(self.floordata.committee.name).font(.custom("Avenir Medium", size: 24)).fontWeight(.bold)
+                Text(self.floordata.floor.description).font(.custom("Avenir Book", size: 20))
                 Image(self.floordata.floor.image)
                     .resizable()
                     .frame(width: geo.size.width, height: geo.size.width * 0.75)
-            }
+                }
+            }.frame(minHeight: geo.size.width)
         }
     }
 }
