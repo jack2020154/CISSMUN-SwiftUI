@@ -21,10 +21,10 @@ struct ScheduleView: View {
                                 Spacer()
                             }
                             Spacer().frame(height: 10)
-                            Text("Click on the button below to view a live-updating spreadsheet that shows current topics and speakers of each committee. Because this schedule is provisional, be wary of changes to the timetable.").font(.custom("Avenir Book", size: 17)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                            Text("Live Updates shows a changing spreadsheet that shows current topics and speakers of each committee. Because this schedule is provisional, be wary of changes to the timetable.").font(.custom("Avenir Book", size: 17)).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                             Spacer().frame(height: 20)
                             HStack {
-                                Text("Live updates require a VPN connection.").font(.custom("Avenir Book", size: 17)).multilineTextAlignment(.leading).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
+                                Text("Live updates require access to Google Docs.").font(.custom("Avenir Book", size: 17)).multilineTextAlignment(.leading).padding(.horizontal).fixedSize(horizontal: false, vertical: true)
                                 Spacer()
                             }
                             Spacer().frame(height: 10)
@@ -44,7 +44,7 @@ struct ScheduleView: View {
                             VStack {
                                 ForEach(conference, id:\.self) { conferenceDay in
                                     VStack {
-                                        Spacer().frame(height: 30)
+                                        Spacer().frame(height: 20)
                                         Text(conferenceDay.date).font(.custom("Avenir Medium", size:24)).fontWeight(.bold).padding(.horizontal)
                                         Spacer().frame(height: 10)
                                         VStack {
@@ -70,5 +70,11 @@ struct ScheduleView: View {
                     }
                 }
         }
+    }
+}
+
+struct ScheduleView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScheduleView()
     }
 }

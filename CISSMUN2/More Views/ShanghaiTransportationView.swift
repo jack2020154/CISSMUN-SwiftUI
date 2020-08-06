@@ -49,7 +49,7 @@ struct ShanghaiTransportationView: View {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
-                                Text("Go to Arrival/Departure Form").foregroundColor(Color.blue)
+                                Text("Arrival/Departure Form").foregroundColor(Color.blue)
                             }
                         }.padding([.top, .bottom])
                     }
